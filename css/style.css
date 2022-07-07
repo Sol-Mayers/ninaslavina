@@ -287,7 +287,7 @@ body {
   overflow-x: hidden;
   font-family: 'Montserrat';
   position: relative;
-  background-image: url('../img/back-logo.jpg');
+  background-image: url('../img/math-desk-light.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -1579,8 +1579,8 @@ p {
   margin-right: auto;
   padding-left: 10px;
   padding-right: 10px;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 @media (min-width: 660px) {
   .low-info__lowest {
@@ -1841,7 +1841,7 @@ h1 {
   font-weight: 600;
 }
 .inside__upper-link-text {
-  font-size: 14px;
+  font-size: 16px;
   margin-top: 5px;
 }
 .inside__upper-link-title {
@@ -1913,7 +1913,7 @@ h1 {
     box-sizing: border-box;
     color: #000000;
     font-family: 'Oswald';
-    font-size: 18px;
+    font-size: 20px;
     font-weight: 400;
     text-decoration: none;
     transition-property: text-shadow;
@@ -2977,7 +2977,6 @@ h1 {
   flex-wrap: wrap;
   box-sizing: border-box;
   font-size: 18px;
-  font-style: italic;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 20px;
@@ -3063,7 +3062,8 @@ h1 {
   margin-right: auto;
   padding: 15px 25px;
   width: 90%;
-  background-color: #BADA55;
+  background-color: transparent;
+  box-shadow: 0px 0px 0px 2px #BADA55;
   border: none;
   font-family: 'Montserrat';
   font-style: normal;
@@ -3074,9 +3074,11 @@ h1 {
 }
 .text-photo-wrap__subscribe-button-mob:hover {
   background-color: #BFE641;
+  box-shadow: 0px 0px 0px 2px #BFE641;
 }
 .text-photo-wrap__subscribe-button-mob:active {
   background-color: #AAC261;
+  box-shadow: 0px 0px 0px 2px #AAC261;
   color: #000000;
 }
 .text-photo-wrap__subscribe-button {
@@ -3084,9 +3086,11 @@ h1 {
 }
 .text-photo-wrap__subscribe-button:hover {
   background-color: #BFE641;
+  box-shadow: 0px 0px 0px 2px #BFE641;
 }
 .text-photo-wrap__subscribe-button:active {
   background-color: #AAC261;
+  box-shadow: 0px 0px 0px 2px #AAC261;
   color: #000000;
 }
 @media (min-width: 660px) {
@@ -3099,7 +3103,8 @@ h1 {
     box-sizing: border-box;
     padding: 15px 25px;
     width: auto;
-    background-color: #BADA55;
+    background-color: transparent;
+    box-shadow: 0px 0px 0px 2px #BADA55;
     border: none;
     font-family: 'Montserrat';
     font-style: normal;
@@ -3207,7 +3212,7 @@ h1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   box-sizing: border-box;
   width: 100%;
@@ -3541,7 +3546,6 @@ figure {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  font-style: italic;
   margin-left: 15px;
 }
 @media (min-width: 660px) {
@@ -3593,7 +3597,7 @@ figure {
 }
 .items__advantages-inner {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
   align-items: flex-start;
   align-content: center;
@@ -3678,7 +3682,6 @@ figure {
   flex-wrap: wrap;
   box-sizing: border-box;
   font-size: 18px;
-  font-style: italic;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 20px;
@@ -4027,7 +4030,7 @@ figure {
   left: 50%;
   transform: translateX(-50%);
   font-family: 'Montserrat';
-  font-size: 20px;
+  font-size: 25px;
   padding: 10px 20px;
   width: fit-content;
 }
@@ -4117,7 +4120,6 @@ figure {
   font-family: 'Montserrat';
   font-size: 15px;
   font-weight: 400;
-  font-style: italic;
   color: #000000;
   display: -webkit-box;
   -webkit-line-clamp: 5;
@@ -4148,7 +4150,7 @@ figure {
     font-size: 19px;
   }
   .feedback-text {
-    font-size: 22px;
+    font-size: 30px;
     bottom: 30px;
   }
   .feedback-photo-text {
@@ -4196,10 +4198,10 @@ figure {
     font-size: 20px;
   }
   .feedback-items {
-    padding-top: 120px;
+    padding-top: 100px;
   }
   .feedback-text {
-    font-size: 32px;
+    font-size: 40px;
     bottom: 60px;
   }
   .feedback-photo-text {
@@ -4321,7 +4323,6 @@ figure {
   font-family: 'Montserrat';
   font-size: 20px;
   font-weight: 700;
-  font-style: italic;
   color: #000000;
 }
 .article-description {
@@ -4330,7 +4331,6 @@ figure {
   font-family: 'Montserrat';
   font-size: 18px;
   font-weight: 400;
-  font-style: italic;
   color: #000000;
   line-height: 1.8;
   background: linear-gradient(180deg, #000000 80%, #ffffff 100%);
@@ -4341,7 +4341,6 @@ figure {
   font-family: 'Montserrat';
   font-size: 18px;
   font-weight: 400;
-  font-style: italic;
   color: #000000;
   line-height: 1.8;
 }
@@ -4422,7 +4421,6 @@ figure {
     font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 400;
-    font-style: italic;
     color: #000000;
     background: linear-gradient(180deg, #000000 40%, #ffffff 100%);
     -webkit-background-clip: text;
@@ -4432,7 +4430,6 @@ figure {
     font-family: 'Montserrat';
     font-size: 16px;
     font-weight: 400;
-    font-style: italic;
     color: #000000;
   }
   .article-image {
@@ -4572,7 +4569,6 @@ figure {
   align-items: flex-start;
   flex-wrap: wrap;
   box-sizing: border-box;
-  font-style: italic;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 25px;
@@ -4826,12 +4822,23 @@ figure {
 }
 .icon-course__text {
   position: absolute;
-  top: 50%;
+  top: 15%;
   left: 50%;
-  transform: translate(-50%,-50%);
+  transform: translate(-50%,-15%);
   font-family: 'Montserrat';
   color: #ffffff;
   font-size: 20px;
+  text-align: center;
+}
+.icon-course__text-word {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%,-70%);
+  font-family: 'Montserrat';
+  color: #ffffff;
+  font-size: 12px;
+  text-align: center;
 }
 .icon-course__image {
   display: flex;
@@ -4840,8 +4847,34 @@ figure {
   background-color: #BADA55;
   border-radius: 50%;
 }
+
+@media (min-width: 660px) {
+  .icon-course__text {
+    font-size: 22px;
+  }
+  .icon-course__image {
+    width: 60px;
+    height: 60px;
+  }
+  .icon-course__text-word {
+    font-size: 14px;
+  }
+}
+@media (min-width: 960px) {
+  .icon-course__text {
+    font-size: 24px;
+  }
+  .icon-course__image {
+    width: 70px;
+    height: 70px;
+  }
+  .icon-course__text-word {
+    font-size: 16px;
+  }
+}
+
+
 .useful {
-  font-style: italic;
   font-weight: bold;
 }
 .courses-wrap__price {
@@ -4849,7 +4882,8 @@ figure {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: #BADA55;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 0px 2px #BADA55;
   margin-left: 5px;
   box-sizing: border-box;
   padding: 8px 10px;
@@ -4888,4 +4922,12 @@ figure {
 #start-date-ten,
 #start-date-eleven {
   margin-left: 5px;
+}
+.second-title__thin {
+  font-weight: 400;
+  width: 100%;
+}
+
+.doc-conf {
+  margin-right: 5px;
 }

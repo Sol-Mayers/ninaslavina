@@ -325,9 +325,6 @@ $.fn.setCursorPosition = function(pos) {
   }
 };
 
-/*
-let menuUr = document.querySelector('.slide-menu-ur');
-
 function myFunction(x) {
   if (x.matches) { // Если медиа запрос совпадает
     $(document).ready(function() {
@@ -335,12 +332,10 @@ function myFunction(x) {
        $(window).scroll(function(event){
          let st = $(this).scrollTop();
          if (st > lastScrollTop){
-            upperMenuCheck.style.transform = "translateY(0px)";
-            menuUr.style.display = "flex";
+            upperMenuCheck.style.transform = "translateY(-30px)";
          }
          if (st < 100 ){
             upperMenuCheck.style.transform = "translateY(0px)";
-            menuUr.style.display = "none";
          }
          lastScrollTop = st;
       });
@@ -352,11 +347,9 @@ function myFunction(x) {
          let st = $(this).scrollTop();
          if (st > lastScrollTop){
             upperMenuCheck.style.transform = "translateY(0px)";
-           menuUr.style.display = "none";
          }
          if (st < 100 ){
             upperMenuCheck.style.transform = "translateY(0px)";
-           menuUr.style.display = "none";
          }
          lastScrollTop = st;
       });
@@ -367,7 +360,7 @@ function myFunction(x) {
 let x = window.matchMedia("(min-width: 960px)");
 myFunction(x) // Вызов функции прослушивателя во время выполнения
 x.addListener(myFunction) // Присоединить функцию прослушивателя при изменении состояния
-*/
+
 
 /* Выделение активного пункта меню */
 
