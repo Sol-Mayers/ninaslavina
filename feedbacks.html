@@ -1,293 +1,998 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nina Slavina</title>
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/swiper.min.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="img/favicon-16x16.png"
+      sizes="16x16"
+    />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Nina Slavina</title>
-  <link href="css/style.css" rel="stylesheet">
-  <link href="css/swiper.min.css" rel="stylesheet">
-  <link href="css/normalize.css" rel="stylesheet">
-  <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
-  <link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
-</head>
-
-<body data-id-page="feedbacks">
-  <header id="home-point">
-    <nav class="upper-menu">
-      <div class="wrap-sec">
-      <div class="up-info__upper">
-        <div class="upper__inside">
-          <a href="#" class="inside__upper-link">
-            <h1 class="inside__upper-link-title-mob">Нина Сергеевна Славина</h1>
-            <p class="inside__upper-link-text">Преподаватель математики</p>
-          </a>
+  <body data-id-page="feedbacks">
+    <header id="home-point">
+      <nav class="upper-menu">
+        <div class="wrap-sec">
+          <div class="up-info__upper">
+            <div class="upper__inside">
+              <a href="#" class="inside__upper-link">
+                <h1 class="inside__upper-link-title-mob">
+                  Нина Сергеевна Славина
+                </h1>
+                <p class="inside__upper-link-text">Преподаватель математики</p>
+              </a>
+            </div>
+          </div>
+          <div class="upper-menu__list-menu">
+            <ul class="logo-wrap-menu">
+              <li class="slide-menu">
+                <a
+                  class="port-item-click menu__item-logo"
+                  href="index.html"
+                  data-id-nav="about"
+                  >Обо мне</a
+                >
+              </li>
+              <li class="slide-menu">
+                <a
+                  class="port-item-click menu__item-logo"
+                  href="shedule.html"
+                  data-id-nav="shedule"
+                  >Онлайн курсы</a
+                >
+              </li>
+              <li class="slide-menu">
+                <a
+                  class="how-to-work-click menu__item-logo"
+                  href="blog.html"
+                  data-id-nav="blog"
+                  >Блог</a
+                >
+              </li>
+              <li class="slide-menu">
+                <a
+                  class="order-click menu__item-logo"
+                  href="feedbacks.html"
+                  data-id-nav="feedbacks"
+                  >Отзывы</a
+                >
+              </li>
+              <li class="slide-menu">
+                <a
+                  class="order-click menu__item-logo"
+                  href="contacts.html"
+                  data-id-nav="contacts"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+            <div class="list-menu__hamburger-menu">
+              <a href="#" class="inside__upper-link-mob">
+                <div class="inside__upper-link-title-mob">
+                  Нина Сергеевна Славина
+                </div>
+                <p class="inside__upper-link-text-mob">
+                  Преподаватель математики
+                </p>
+              </a>
+              <input id="menu__toggle" type="checkbox" />
+              <label id="main-btn" class="menu__btn" for="menu__toggle">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+              </label>
+              <ul class="menu__box">
+                <li>
+                  <a href="index.html" class="port-item-click menu__item"
+                    >Обо мне</a
+                  >
+                </li>
+                <li>
+                  <a href="shedule.html" class="how-to-work-click menu__item"
+                    >Онлайн курсы</a
+                  >
+                </li>
+                <li>
+                  <a href="blog.html" class="price-click menu__item">Блог</a>
+                </li>
+                <li>
+                  <a href="feedbacks.html" class="order-click menu__item"
+                    >Отзывы</a
+                  >
+                </li>
+                <li>
+                  <a href="contacts.html" class="order-click menu__item"
+                    >Контакты</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="upper-menu__list-menu">
-        <ul class="logo-wrap-menu">
-          <li class="slide-menu"><a class="port-item-click menu__item-logo" href="index.html" data-id-nav="about">Обо мне</a> </li>
-            <li class="slide-menu"><a class="port-item-click menu__item-logo" href="shedule.html" data-id-nav="shedule">Онлайн курсы</a> </li>
-            <li class="slide-menu"><a class="how-to-work-click menu__item-logo" href="blog.html" data-id-nav="blog">Блог</a> </li>
-            <li class="slide-menu"><a class="order-click menu__item-logo" href="feedbacks.html" data-id-nav="feedbacks">Отзывы</a> </li>
-            <li class="slide-menu"><a class="order-click menu__item-logo" href="contacts.html" data-id-nav="contacts">Контакты</a> </li>
-        </ul>
-        <div class="list-menu__hamburger-menu">
-          <a href="#" class="inside__upper-link-mob">
-            <div class="inside__upper-link-title-mob">Нина Сергеевна Славина</div>
-            <p class="inside__upper-link-text-mob">Преподаватель математики</p>
-          </a>
-          <input id="menu__toggle" type="checkbox" />
-          <label id="main-btn" class="menu__btn" for="menu__toggle">
-            <div class="bar1"></div>
-            <div class="bar2"></div>
-            <div class="bar3"></div>
-          </label>
-          <ul class="menu__box">
-            <li><a href="index.html" class="port-item-click menu__item">Обо мне</a></li>
-            <li><a href="shedule.html" class="how-to-work-click menu__item">Онлайн курсы</a></li>
-            <li><a href="blog.html" class="price-click menu__item">Блог</a></li>
-            <li><a href="feedbacks.html" class="order-click menu__item">Отзывы</a></li>
-            <li><a href="contacts.html" class="order-click menu__item">Контакты</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    </nav>
-  </header>
-  <main>
-    <div class="main-info">
-      <div class="main-info__items feedback-items">
-        <div class="feedback-photo-text">
-          <img src="./img/feedback-back-5.jpg" width="300" height="250" alt="feedback-photo" class="feedback-photo-back">
-          <p class="feedback-text">Отзывы моих учеников</p>
-        </div>
-        <div class="items__text-photo-wrap">
-          <div class="text-photo-wrap__main-blog">
-            <h2 class="feebacks-title">За свою преподавательскую деятельность я получила множество положительных отзывов о своей работе от студентов, учеников и их родителей. Некоторые из них вы можете увидеть ниже. <br>Кликните на отзыв, чтобы увидеть его целиком.</h2>
-            <div class="blog-items">
-              <div class="blog-items-first-wrapper">
-                <a href="https://repetit24.ru/tutor/slavina_nina_sergeevna#reviews" class="feedback-items-inner-wrapper">
-                  <div class="feedback-second-wrapper">
-                    <img src="./img/feedback-wooman.svg" width="100" height="100" alt="feedback-icon" class="feedback-icon">
-                    <p class="feedback-user-name">Елена</p>
-                    <p class="feedback-user-text">Для сына-ученика 9 класса, балансирующего между двойкой и тройкой по алгебре, решила найти репетитора. Воспользовалась услугами Нины Сергеевны. И не пожалела! Преподавателем осталась очень довольна. Вернее полученным результатом. Дисциплинирована, ответственна, очень четко, понятно довела до сына материал, растолковала. Показателем ее работы считаю результат экзаменационной работы -четверка и появившаяся уверенность сына в своих знаниях. Нине Сергеевне огромное спасибо!!!</p>
-                    <img src="./img/quotes.svg" width="100" height="100" alt="quotes-icon" class="quotes-icon">
-                  </div>
-                </a>
-                <a href="https://repetit24.ru/tutor/slavina_nina_sergeevna#reviews" class="feedback-items-inner-wrapper">
-                  <div class="feedback-second-wrapper">
-                    <img src="./img/feedback-man.svg" width="100" height="100" alt="feedback-icon" class="feedback-icon">
-                    <p class="feedback-user-name">Олег Сергеевич</p>
-                    <p class="feedback-user-text">Нина Сергеевна - хороший человек и педагог! Алиса стала лучше разбираться в математике. Всегда пунктуальна, ответственно подходит к занятиям. Приятная и доброжелательная девушка. Знания предмета у неё на высоком уровне, легко идёт на контакт. Мы удовлетворены работой репетитора!</p>
-                    <img src="./img/quotes.svg" width="100" height="100" alt="quotes-icon" class="quotes-icon">
-                  </div>
-                </a>
-                <a href="https://profi.ru/profile/SlavinaNS/" class="feedback-items-inner-wrapper">
-                  <div class="feedback-second-wrapper">
-                    <img src="./img/feedback-wooman.svg" width="100" height="100" alt="feedback-icon" class="feedback-icon">
-                    <p class="feedback-user-name">Алекандра</p>
-                    <p class="feedback-user-text">Нина Сергеевна – очень хороший репетитор, только она улетела за границу, поэтому мы не продолжили с ней занятия в этом учебном году. Мы с ней проработали около года или чуть меньше. Если я не ошибаюсь, месяцев восемь она точно с ребёнком отработала. С ней мы занимались в восьмом классе и на пятёрку по математике благодаря её помощи вышли точно. К ОГЭ ребёнка она тогда ещё не готовила. Они не успели коснуться этой темы, улучшая только текущую школьную успеваемость тогда. Занятия Нина Сергеевна проводила с нами только по Skype. Потом и она уехала, и лето уже началось, так что и мы не могли, поэтому обучение было завершено. Но результатами я осталась полностью довольна. Большое спасибо репетитору за помощь.</p>
-                    <img src="./img/quotes.svg" width="100" height="100" alt="quotes-icon" class="quotes-icon">
-                  </div>
-                </a>
-                <a href="https://needspec.ru/repetitory/profile/slavina-nina-sergeevna#otzyvy" class="feedback-items-inner-wrapper">
-                  <div class="feedback-second-wrapper">
-                    <img src="./img/feedback-wooman.svg" width="100" height="100" alt="feedback-icon" class="feedback-icon">
-                    <p class="feedback-user-name">Оксана</p>
-                    <p class="feedback-user-text">Именно благодаря Нине Сергеевне экзамен был сдан, она очень хороший преподаватель! Жалко, что закончился этот предмет, если бы обратились раньше - результат был бы лучше. За время всего одного занятия объяснила и систематизировала весь материал и смогла подготовить.</p>
-                    <img src="./img/quotes.svg" width="100" height="100" alt="quotes-icon" class="quotes-icon">
-                  </div>
-                </a>
+      </nav>
+    </header>
+    <main>
+      <div class="main-info">
+        <div class="main-info__items feedback-items">
+          <div class="feedback-photo-text">
+            <img
+              src="./img/feedback-back-6.jpg"
+              width="300"
+              height="250"
+              alt="feedback-photo"
+              class="feedback-photo-back"
+            />
+            <p class="feedback-text">Отзывы моих учеников</p>
+          </div>
+          <div class="items__text-photo-wrap">
+            <div class="text-photo-wrap__main-blog">
+              <h2 class="feebacks-title">
+                За свою преподавательскую деятельность я получила множество
+                положительных отзывов о своей работе от студентов, учеников и их
+                родителей. Некоторые из них вы можете увидеть ниже.
+                <br />Кликните на отзыв, чтобы увидеть его целиком.
+              </h2>
+              <div class="blog-items">
+                <div class="blog-items-first-wrapper">
+                  <a
+                    href="https://repetit24.ru/tutor/slavina_nina_sergeevna#reviews"
+                    class="feedback-items-inner-wrapper"
+                  >
+                    <div class="feedback-second-wrapper">
+                      <img
+                        src="./img/feedback-wooman.svg"
+                        width="100"
+                        height="100"
+                        alt="feedback-icon"
+                        class="feedback-icon"
+                      />
+                      <p class="feedback-user-name">Елена</p>
+                      <p class="feedback-user-text">
+                        Для сына-ученика 9 класса, балансирующего между двойкой
+                        и тройкой по алгебре, решила найти репетитора.
+                        Воспользовалась услугами Нины Сергеевны. И не пожалела!
+                        Преподавателем осталась очень довольна. Вернее
+                        полученным результатом. Дисциплинирована, ответственна,
+                        очень четко, понятно довела до сына материал,
+                        растолковала. Показателем ее работы считаю результат
+                        экзаменационной работы -четверка и появившаяся
+                        уверенность сына в своих знаниях. Нине Сергеевне
+                        огромное спасибо!!!
+                      </p>
+                      <img
+                        src="./img/quotes.svg"
+                        width="100"
+                        height="100"
+                        alt="quotes-icon"
+                        class="quotes-icon"
+                      />
+                    </div>
+                  </a>
+                  <a
+                    href="https://repetit24.ru/tutor/slavina_nina_sergeevna#reviews"
+                    class="feedback-items-inner-wrapper"
+                  >
+                    <div class="feedback-second-wrapper">
+                      <img
+                        src="./img/feedback-man.svg"
+                        width="100"
+                        height="100"
+                        alt="feedback-icon"
+                        class="feedback-icon"
+                      />
+                      <p class="feedback-user-name">Олег Сергеевич</p>
+                      <p class="feedback-user-text">
+                        Нина Сергеевна - хороший человек и педагог! Алиса стала
+                        лучше разбираться в математике. Всегда пунктуальна,
+                        ответственно подходит к занятиям. Приятная и
+                        доброжелательная девушка. Знания предмета у неё на
+                        высоком уровне, легко идёт на контакт. Мы удовлетворены
+                        работой репетитора!
+                      </p>
+                      <img
+                        src="./img/quotes.svg"
+                        width="100"
+                        height="100"
+                        alt="quotes-icon"
+                        class="quotes-icon"
+                      />
+                    </div>
+                  </a>
+                  <a
+                    href="https://profi.ru/profile/SlavinaNS/"
+                    class="feedback-items-inner-wrapper"
+                  >
+                    <div class="feedback-second-wrapper">
+                      <img
+                        src="./img/feedback-wooman.svg"
+                        width="100"
+                        height="100"
+                        alt="feedback-icon"
+                        class="feedback-icon"
+                      />
+                      <p class="feedback-user-name">Алекандра</p>
+                      <p class="feedback-user-text">
+                        Нина Сергеевна – очень хороший репетитор, только она
+                        улетела за границу, поэтому мы не продолжили с ней
+                        занятия в этом учебном году. Мы с ней проработали около
+                        года или чуть меньше. Если я не ошибаюсь, месяцев восемь
+                        она точно с ребёнком отработала. С ней мы занимались в
+                        восьмом классе и на пятёрку по математике благодаря её
+                        помощи вышли точно. К ОГЭ ребёнка она тогда ещё не
+                        готовила. Они не успели коснуться этой темы, улучшая
+                        только текущую школьную успеваемость тогда. Занятия Нина
+                        Сергеевна проводила с нами только по Skype. Потом и она
+                        уехала, и лето уже началось, так что и мы не могли,
+                        поэтому обучение было завершено. Но результатами я
+                        осталась полностью довольна. Большое спасибо репетитору
+                        за помощь.
+                      </p>
+                      <img
+                        src="./img/quotes.svg"
+                        width="100"
+                        height="100"
+                        alt="quotes-icon"
+                        class="quotes-icon"
+                      />
+                    </div>
+                  </a>
+                  <a
+                    href="https://needspec.ru/repetitory/profile/slavina-nina-sergeevna#otzyvy"
+                    class="feedback-items-inner-wrapper"
+                  >
+                    <div class="feedback-second-wrapper">
+                      <img
+                        src="./img/feedback-wooman.svg"
+                        width="100"
+                        height="100"
+                        alt="feedback-icon"
+                        class="feedback-icon"
+                      />
+                      <p class="feedback-user-name">Оксана</p>
+                      <p class="feedback-user-text">
+                        Именно благодаря Нине Сергеевне экзамен был сдан, она
+                        очень хороший преподаватель! Жалко, что закончился этот
+                        предмет, если бы обратились раньше - результат был бы
+                        лучше. За время всего одного занятия объяснила и
+                        систематизировала весь материал и смогла подготовить.
+                      </p>
+                      <img
+                        src="./img/quotes.svg"
+                        width="100"
+                        height="100"
+                        alt="quotes-icon"
+                        class="quotes-icon"
+                      />
+                    </div>
+                  </a>
+                  <a
+                    href="https://profi.ru/profile/SlavinaNS/"
+                    class="feedback-items-inner-wrapper"
+                  >
+                    <div class="feedback-second-wrapper">
+                      <img
+                        src="./img/feedback-wooman.svg"
+                        width="100"
+                        height="100"
+                        alt="feedback-icon"
+                        class="feedback-icon"
+                      />
+                      <p class="feedback-user-name">Анна</p>
+                      <p class="feedback-user-text">
+                        Спасибо большое Нине Сергеевне за помощь в сдаче сессии,
+                        сессия сдана и пробелы в знаниях заполнены
+                      </p>
+                      <img
+                        src="./img/quotes.svg"
+                        width="100"
+                        height="100"
+                        alt="quotes-icon"
+                        class="quotes-icon"
+                      />
+                    </div>
+                  </a>
+                  <a
+                    href="https://repetit24.ru/tutor/slavina_nina_sergeevna#reviews"
+                    class="feedback-items-inner-wrapper"
+                  >
+                    <div class="feedback-second-wrapper">
+                      <img
+                        src="./img/feedback-wooman.svg"
+                        width="100"
+                        height="100"
+                        alt="feedback-icon"
+                        class="feedback-icon"
+                      />
+                      <p class="feedback-user-name">Валерия</p>
+                      <p class="feedback-user-text">
+                        Нина Сергеевна - отличный преподаватель, понятно и
+                        доступно объясняет предмет. Благодаря ей, я стала
+                        понимать физику. Занятия проходят легко и очень
+                        интересно. Спасибо ей большое!
+                      </p>
+                      <img
+                        src="./img/quotes.svg"
+                        width="100"
+                        height="100"
+                        alt="quotes-icon"
+                        class="quotes-icon"
+                      />
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </main>
-  <footer>
-    <div class="low-info">
-      <div class="low-info__lowest">
-        <div class="inside__links cont-left">
-          <div class="social-wrap-message">
-            <div class="tel-soc-wrap">
-              <a href="https://vk.com/id2160895" class="inside__lowest-link whatsapp"></a>
-              <a href="tg://resolve?domain=ninaslavina" class="inside__lowest-link telegram"></a>
-              <a href="https://www.youtube.com/channel/UCtljxRy92SbRHNs7DqCZVHQ" class="inside__lowest-link vk"></a>
+    </main>
+    <footer>
+      <div class="low-info">
+        <div class="low-info__lowest">
+          <div class="inside__links cont-left">
+            <div class="social-wrap-message">
+              <div class="tel-soc-wrap">
+                <a
+                  href="https://vk.com/id2160895"
+                  class="inside__lowest-link whatsapp"
+                ></a>
+                <a
+                  href="tg://resolve?domain=ninaslavina"
+                  class="inside__lowest-link telegram"
+                ></a>
+                <a
+                  href="https://www.youtube.com/channel/UCtljxRy92SbRHNs7DqCZVHQ"
+                  class="inside__lowest-link vk"
+                ></a>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="lowest__inside conf-right">
-          <button class="privacy-button">Политика конфиденциальности</button>
-        </div>
-        <div class="lowest__inside">
-          <button class="contract-button">Договор-оферта</button>
-        </div>
-        <div class="inside__links links-center">
-          <a href="https://www.urdigital.ru" class="email-cast">Создано в веб-мастерской URdigital</a> 
+          <div class="lowest__inside conf-right">
+            <button class="privacy-button">Политика конфиденциальности</button>
+          </div>
+          <div class="lowest__inside">
+            <button class="contract-button">Договор-оферта</button>
+          </div>
+          <div class="inside__links links-center">
+            <a href="https://www.urdigital.ru" class="email-cast"
+              >Создано в веб-мастерской URdigital</a
+            >
+          </div>
         </div>
       </div>
+    </footer>
+    <div class="popup-privacy">
+      <button class="privacy-close"></button>
+      <div class="privacy-inner">
+        <h3 class="main-privacy-title">Политика конфиденциальности</h3>
+        <p class="privacy-list-title-item">
+          Соглашаясь с Условиями работы сайта (далее – Условия) и оставляя свои
+          данные на сайте ninaslavina.ru (далее – Сайт), путем заполнения полей
+          заявки Пользователь:
+        </p>
+        <ul class="privacy-list">
+          <li class="privacy-list-item">
+            Подтверждает, что указанные им данные принадлежат лично ему;
+          </li>
+          <li class="privacy-list-item">
+            Признает и подтверждает, что он внимательно и в полном объеме
+            ознакомился с настоящими Условиями;
+          </li>
+          <li class="privacy-list-item">
+            Признает и подтверждает, что все положения настоящего Условий ему
+            понятны;
+          </li>
+          <li class="privacy-list-item">
+            Дает согласие на обработку Сайтом предоставляемых данных в целях для
+            идентификации Пользователя, как клиента и связи с Пользователем для
+            оказания услуг;
+          </li>
+          <li class="privacy-list-item">
+            Выражает согласие с данными Условиями без каких-либо оговорок и
+            ограничений.
+          </li>
+        </ul>
+        <p class="privacy-list-title-item">
+          Настоящее Условия применяются в отношении обработки следующих данных:
+        </p>
+        <ul class="privacy-list">
+          <li class="privacy-list-item">Номера телефонов;</li>
+          <li class="privacy-list-item">Адресах электронной почты.</li>
+          <li class="privacy-list-item">IP-адрес</li>
+        </ul>
+        <p class="privacy-list-title-item">
+          Пользователь, предоставляет Сайту ninaslavina.ru право осуществлять
+          следующие действия (операции) с пользовательскими данными:
+        </p>
+        <ul class="privacy-list">
+          <li class="privacy-list-item">Сбор и накопление;</li>
+          <li class="privacy-list-item">Уточнение (обновление, изменение);</li>
+          <li class="privacy-list-item">
+            Использование в целях связи с Пользователем для указания услуг;
+          </li>
+          <li class="privacy-list-item">Уничтожение.</li>
+        </ul>
+        <p>
+          Данные, собираемые на сайте, используются только для исполнения
+          конкретного договора.
+        </p>
+        <p>
+          Отзыв согласия с Условиями работы сайта может быть осуществлен путем
+          направления Пользователем соответствующего распоряжения в простой
+          письменной форме на адрес электронной почты: welcome@ninaslavina.ru
+        </p>
+        <p>
+          Сайт не несет ответственности за использование (как правомерное, так и
+          неправомерное) третьими лицами информации, размещенной Пользователем
+          на Сайте, включая её воспроизведение и распространение, осуществленные
+          всеми возможными способами.
+        </p>
+      </div>
     </div>
-  </footer>
-  <div class="popup-privacy">
-    <button class="privacy-close"></button>
-    <div class="privacy-inner">
-      <h3 class="main-privacy-title">Политика конфиденциальности</h3>
-      <p class="privacy-list-title-item">Соглашаясь с Условиями работы сайта (далее – Условия) и оставляя свои данные на сайте ninaslavina.ru (далее – Сайт), путем заполнения полей заявки Пользователь:</p>
-      <ul class="privacy-list">
-        <li class="privacy-list-item"> Подтверждает, что указанные им данные принадлежат лично ему; </li>
-        <li class="privacy-list-item"> Признает и подтверждает, что он внимательно и в полном объеме ознакомился с настоящими Условиями; </li>
-        <li class="privacy-list-item"> Признает и подтверждает, что все положения настоящего Условий ему понятны; </li>
-        <li class="privacy-list-item"> Дает согласие на обработку Сайтом предоставляемых данных в целях для идентификации Пользователя, как клиента и связи с Пользователем для оказания услуг; </li>
-        <li class="privacy-list-item"> Выражает согласие с данными Условиями без каких-либо оговорок и ограничений. </li>
-      </ul>
-      <p class="privacy-list-title-item">Настоящее Условия применяются в отношении обработки следующих данных:</p>
-      <ul class="privacy-list">
-        <li class="privacy-list-item">Номера телефонов;</li>
-        <li class="privacy-list-item">Адресах электронной почты.</li>
-        <li class="privacy-list-item">IP-адрес</li>
-      </ul>
-      <p class="privacy-list-title-item">Пользователь, предоставляет Сайту ninaslavina.ru право осуществлять следующие действия (операции) с пользовательскими данными:</p>
-      <ul class="privacy-list">
-        <li class="privacy-list-item">Сбор и накопление;</li>
-        <li class="privacy-list-item">Уточнение (обновление, изменение);</li>
-        <li class="privacy-list-item">Использование в целях связи с Пользователем для указания услуг;</li>
-        <li class="privacy-list-item">Уничтожение.</li>
-      </ul>
-      <p>Данные, собираемые на сайте, используются только для исполнения конкретного договора.</p>
-      <p>Отзыв согласия с Условиями работы сайта может быть осуществлен путем направления Пользователем соответствующего распоряжения в простой письменной форме на адрес электронной почты: welcome@ninaslavina.ru</p>
-      <p>Сайт не несет ответственности за использование (как правомерное, так и неправомерное) третьими лицами информации, размещенной Пользователем на Сайте, включая её воспроизведение и распространение, осуществленные всеми возможными способами.</p>
-    </div>
-  </div>
-  <div class="popup-contract">
-    <button class="contract-close"></button>
-    <div class="privacy-inner">
-      <h3 class="main-privacy-title">Договор-оферта об оказании образовательных и иных услуг в онлайн-формате</h3>
-      <p class="privacy-list-title-item">Самозанятый гражданин Славина Нина Сергеевна (ИНН 615107529920), именуемая в дальнейшем «Исполнитель», предлагает заинтересованному лицу, именуемому в дальнейшем «Заказчик», а вместе именуемые «Стороны», заключить оферту об оказании образовательных услуг в онлайн-формате.</p> 
-      <p class="privacy-list-title-item">ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ, ИСПОЛЬЗУЕМЫЕ В НАСТОЯЩЕМ ДОГОВОРЕ- ОФЕРТЕ:</p> 
+    <div class="popup-contract">
+      <button class="contract-close"></button>
+      <div class="privacy-inner">
+        <h3 class="main-privacy-title">
+          Договор-оферта об оказании образовательных и иных услуг в
+          онлайн-формате
+        </h3>
+        <p class="privacy-list-title-item">
+          Самозанятый гражданин Славина Нина Сергеевна (ИНН 615107529920),
+          именуемая в дальнейшем «Исполнитель», предлагает заинтересованному
+          лицу, именуемому в дальнейшем «Заказчик», а вместе именуемые
+          «Стороны», заключить оферту об оказании образовательных услуг в
+          онлайн-формате.
+        </p>
+        <p class="privacy-list-title-item">
+          ТЕРМИНЫ И ОПРЕДЕЛЕНИЯ, ИСПОЛЬЗУЕМЫЕ В НАСТОЯЩЕМ ДОГОВОРЕ- ОФЕРТЕ:
+        </p>
         <ul class="privacy-list">
-          <li class="privacy-list-item contract-item">Образовательные услуги (далее – «Услуги») – онлайн-услуга в виде прямого эфира, вебинара, курса, семинара, лекции, мастер-класса, марафона, интенсива, организованная в режиме прямой трансляции в сети Интернет или предоставляемая Заказчику в записи. Услуги могут быть также в качестве консультаций/ трансляций/ обучения/ тестирования в мессенджерах, или предоставляться в форме методических материалов, пособий, книг, гайдов, чек-листов, аудиозаписей.</li> 
-          <li class="privacy-list-item contract-item">Электронный адрес/электронная почта Заказчика – электронный адрес, указанный Заказчиком в Анкете Участника.</li> 
-          <li class="privacy-list-item contract-item">Заказчик – физическое или юридическое лицо, получающее платные услуги в виде получения доступа к Услугам на условиях настоящего договора оферты. Заказчиком может быть только лицо, принимающее условия настоящей оферты, имеющее свой собственный адрес электронной почты или номер мобильного телефона, доступ к которым находится в его распоряжении.</li> 
-          <li class="privacy-list-item contract-item">Курс/онлайн-курс/программа – информационная услуга или информационный продукт, предоставляемый Исполнителем на возмездной основе, и предоставляемая Заказчику на условиях индивидуального ограниченного доступа. Курс состоит из двенадцати модулей и длится 1 (один) год.</li> 
-          <li class="privacy-list-item contract-item">Модуль - самостоятельная часть Курса, равная 1 (одному) календарному месяцу.</li>
-          <li class="privacy-list-item contract-item">Занятие - самостоятельная часть Модуля (онлайн-трансляция).</li>
-          <li class="privacy-list-item contract-item">Акцепт – полное и безоговорочное принятие настоящей оферты Заказчиком в порядке, предусмотренном пунктом 1.2 настоящего Договора-оферты, означающее заключение Договора.</li> 
-          <li class="privacy-list-item contract-item">Сайт - совокупность данных, доступных для просмотра в сети Интернет по адресу www.ninaslavina.ru.</li> 
+          <li class="privacy-list-item contract-item">
+            Образовательные услуги (далее – «Услуги») – онлайн-услуга в виде
+            прямого эфира, вебинара, курса, семинара, лекции, мастер-класса,
+            марафона, интенсива, организованная в режиме прямой трансляции в
+            сети Интернет или предоставляемая Заказчику в записи. Услуги могут
+            быть также в качестве консультаций/ трансляций/ обучения/
+            тестирования в мессенджерах, или предоставляться в форме
+            методических материалов, пособий, книг, гайдов, чек-листов,
+            аудиозаписей.
+          </li>
+          <li class="privacy-list-item contract-item">
+            Электронный адрес/электронная почта Заказчика – электронный адрес,
+            указанный Заказчиком в Анкете Участника.
+          </li>
+          <li class="privacy-list-item contract-item">
+            Заказчик – физическое или юридическое лицо, получающее платные
+            услуги в виде получения доступа к Услугам на условиях настоящего
+            договора оферты. Заказчиком может быть только лицо, принимающее
+            условия настоящей оферты, имеющее свой собственный адрес электронной
+            почты или номер мобильного телефона, доступ к которым находится в
+            его распоряжении.
+          </li>
+          <li class="privacy-list-item contract-item">
+            Курс/онлайн-курс/программа – информационная услуга или
+            информационный продукт, предоставляемый Исполнителем на возмездной
+            основе, и предоставляемая Заказчику на условиях индивидуального
+            ограниченного доступа. Курс состоит из двенадцати модулей и длится 1
+            (один) год.
+          </li>
+          <li class="privacy-list-item contract-item">
+            Модуль - самостоятельная часть Курса, равная 1 (одному) календарному
+            месяцу.
+          </li>
+          <li class="privacy-list-item contract-item">
+            Занятие - самостоятельная часть Модуля (онлайн-трансляция).
+          </li>
+          <li class="privacy-list-item contract-item">
+            Акцепт – полное и безоговорочное принятие настоящей оферты
+            Заказчиком в порядке, предусмотренном пунктом 1.2 настоящего
+            Договора-оферты, означающее заключение Договора.
+          </li>
+          <li class="privacy-list-item contract-item">
+            Сайт - совокупность данных, доступных для просмотра в сети Интернет
+            по адресу www.ninaslavina.ru.
+          </li>
         </ul>
-        <p class="privacy-list-title-item">1. ОБЩИЕ ПОЛОЖЕНИЯ И ПРАВОВОЕ ОСНОВАНИЕ ДОГОВОРА-ОФЕРТЫ</p> 
+        <p class="privacy-list-title-item">
+          1. ОБЩИЕ ПОЛОЖЕНИЯ И ПРАВОВОЕ ОСНОВАНИЕ ДОГОВОРА-ОФЕРТЫ
+        </p>
         <ul class="privacy-list">
-          <li class="privacy-list-item contract-item">1.1. Договор-оферта является официальным предложением Исполнителя (офертой) к заключению договора на предоставление платного доступа к Услугам и публикуется в глобальной компьютерной сети Интернет на веб-сайте Исполнителя: www.ninaslavina.ru.</li> 
-          <li class="privacy-list-item contract-item">1.2. Акцептом настоящего Договора-оферты считается последовательное осуществление Заказчиком следующих действий: <br>1.2.1. заполнение на Сайте (ссылка на сайт) анкеты;
-            <br>1.2.2. осуществление оплаты Услуг в порядке, предусмотренном п. 3.1 Договора-оферты . Оказание услуг по каждому Модулю осуществляется путем заключения нового
-            Договора-оферты (Заказчик акцептует Оферту на каждый конкретный Модуль).</li> 
-          <li class="privacy-list-item contract-item">1.3. В соответствии с п.3 ст.438 ГК РФ акцепт настоящей оферты равносилен заключению Договора на условиях, изложенных в ней.</li> 
-          <li class="privacy-list-item contract-item">1.4. Осуществляя акцепт Договора-оферты в порядке, определенном пунктом 1.3 Договора-оферты, Заказчик гарантирует, что ознакомлен, соглашается, полностью и безоговорочно принимает все условия Договора-оферты в том виде, в каком они изложены в тексте Договора-оферты.</li> 
-          <li class="privacy-list-item contract-item">1.5. Исполнитель вправе в любое время вносить изменения в условия Договора-оферты.</li> 
-          <li class="privacy-list-item contract-item">1.6. Изменения в условия Договора-оферты начинают свое действие с момента опубликования их на Сайте.</li> 
-          <li class="privacy-list-item contract-item">1.7. Договор-оферта не может быть отозван.</li>
-          <li class="privacy-list-item contract-item">1.8. Договор–оферта не требует скрепления печатями и/или подписания Заказчиком и Исполнителем, сохраняя при этом полную юридическую силу.</li> 
-          <li class="privacy-list-item contract-item">1.9. Осуществляя акцепт настоящей оферты, Заказчик подтверждает, что имеет доступ к сети Интернет и имеет возможность обучаться в онлайн-формате, в том числе имеет возможность получать Услуги онлайн.</li> 
-          <li class="privacy-list-item contract-item">1.10. Заказчик обязуется внимательно прочитать текст данной оферты и, если он не согласен с каким-либо пунктом, то Исполнитель предлагает отказаться от каких-либо действий, необходимых для акцепта или заключить персональный договор на отдельно обсуждаемых с Исполнителем условиях.</li> 
+          <li class="privacy-list-item contract-item">
+            1.1. Договор-оферта является официальным предложением Исполнителя
+            (офертой) к заключению договора на предоставление платного доступа к
+            Услугам и публикуется в глобальной компьютерной сети Интернет на
+            веб-сайте Исполнителя: www.ninaslavina.ru.
+          </li>
+          <li class="privacy-list-item contract-item">
+            1.2. Акцептом настоящего Договора-оферты считается последовательное
+            осуществление Заказчиком следующих действий: <br />1.2.1. заполнение
+            на Сайте (ссылка на сайт) анкеты; <br />1.2.2. осуществление оплаты
+            Услуг в порядке, предусмотренном п. 3.1 Договора-оферты . Оказание
+            услуг по каждому Модулю осуществляется путем заключения нового
+            Договора-оферты (Заказчик акцептует Оферту на каждый конкретный
+            Модуль).
+          </li>
+          <li class="privacy-list-item contract-item">
+            1.3. В соответствии с п.3 ст.438 ГК РФ акцепт настоящей оферты
+            равносилен заключению Договора на условиях, изложенных в ней.
+          </li>
+          <li class="privacy-list-item contract-item">
+            1.4. Осуществляя акцепт Договора-оферты в порядке, определенном
+            пунктом 1.3 Договора-оферты, Заказчик гарантирует, что ознакомлен,
+            соглашается, полностью и безоговорочно принимает все условия
+            Договора-оферты в том виде, в каком они изложены в тексте
+            Договора-оферты.
+          </li>
+          <li class="privacy-list-item contract-item">
+            1.5. Исполнитель вправе в любое время вносить изменения в условия
+            Договора-оферты.
+          </li>
+          <li class="privacy-list-item contract-item">
+            1.6. Изменения в условия Договора-оферты начинают свое действие с
+            момента опубликования их на Сайте.
+          </li>
+          <li class="privacy-list-item contract-item">
+            1.7. Договор-оферта не может быть отозван.
+          </li>
+          <li class="privacy-list-item contract-item">
+            1.8. Договор–оферта не требует скрепления печатями и/или подписания
+            Заказчиком и Исполнителем, сохраняя при этом полную юридическую
+            силу.
+          </li>
+          <li class="privacy-list-item contract-item">
+            1.9. Осуществляя акцепт настоящей оферты, Заказчик подтверждает, что
+            имеет доступ к сети Интернет и имеет возможность обучаться в
+            онлайн-формате, в том числе имеет возможность получать Услуги
+            онлайн.
+          </li>
+          <li class="privacy-list-item contract-item">
+            1.10. Заказчик обязуется внимательно прочитать текст данной оферты
+            и, если он не согласен с каким-либо пунктом, то Исполнитель
+            предлагает отказаться от каких-либо действий, необходимых для
+            акцепта или заключить персональный договор на отдельно обсуждаемых с
+            Исполнителем условиях.
+          </li>
         </ul>
-        <p class="privacy-list-title-item">2. Предмет Договора</p> 
+        <p class="privacy-list-title-item">2. Предмет Договора</p>
         <ul class="privacy-list">
-          <li class="privacy-list-item contract-item">2.1. Предметом настоящей Оферты является возмездное предоставление Заказчику Услуг по выбранной Заказчиком цене и на выбранную Заказчиком тему, которые Заказчик обязуется принять и оплатить в порядке, предусмотренном настоящим Договором.</li> 
+          <li class="privacy-list-item contract-item">
+            2.1. Предметом настоящей Оферты является возмездное предоставление
+            Заказчику Услуг по выбранной Заказчиком цене и на выбранную
+            Заказчиком тему, которые Заказчик обязуется принять и оплатить в
+            порядке, предусмотренном настоящим Договором.
+          </li>
         </ul>
-        <p class="privacy-list-title-item">3. Условия и порядок предоставления Услуг</p> 
+        <p class="privacy-list-title-item">
+          3. Условия и порядок предоставления Услуг
+        </p>
         <ul class="privacy-list">
-          <li class="privacy-list-item contract-item">3.1. Оплата Услуг по выбранному Заказчиком Курсу производится ежемесячно после первого Занятия каждого Модуля</li> 
-          <li class="privacy-list-item contract-item">3.2. В случае, если в установленное условиями предоставления Услуги время Заказчик не может приступить к занятиям/подключиться к онлайн-трансляции, Заказчику необходимо уведомить об этом Исполнителя не позднее чем за 72 часа до начала предоставления Услуги. В этому случае Исполнитель рассматривает возможности переноса времени предоставления Услуги Заказчику. При несоблюдении Заказчиком сроков уведомления, Услуга считается оказанной и не переносится на другое время.</li>
-          <li class="privacy-list-item contract-item">3.3. Оплата услуг Исполнителя осуществляется путем оплаты на банковскую карту Исполнителя. Номер карты указан в пункте 9 настоящего Договора.</li>
-          <li class="privacy-list-item contract-item">3.3.1. В случае совершения платежа с помощью банковской карты, Заказчику рекомендуется использовать банковскую карту, выпущенную на имя Заказчика. В случае осуществления возврата оплаченных денежных средств, возврат производится по тем же реквизитам, по которым был получен платеж, и на основании личного заявления лица, на чье имя была выпущена банковская карта в соответствии с условиями п. 5.4. настоящего Договора.</li> 
-          <li class="privacy-list-item contract-item">3.3.2. В случае неоплаты стоимости Услуг в установленные сроки, при несвоевременном предоставлении данных для оформления заявки либо при указании недостоверных данных при оформлении заявки настоящий Договор не считается заключенным.</li> 
-          <li class="privacy-list-item contract-item">3.4. Настоящий Договор является актом об оказании услуги. Услуги считаются оказанными с момента получения доступа к материалам Услуги.</li>  
-          <li class="privacy-list-item contract-item">3.6. Обязательство Заказчика по оплате считается исполненным с момента зачисления денежных средств, на расчетный счет Исполнителя.</li> 
-          <li class="privacy-list-item contract-item">3.7. Исполнитель обязуется предоставить Заказчику Услугу в срок, заявленный на сайте Исполнителя.</li>
-          <li class="privacy-list-item contract-item">3.8. В случае если Заказчик не получает Услуги своевременно по собственной вине или собственному желанию, Услуги считается оказанными надлежащим образом. В случае если Заказчик не принял участие в вебинаре в режиме реального времени, возврат оплаченных денежных средств не осуществляется, но Заказчику дается возможность доступа к записи вебинара, если это указано в предложении к данной Услуги на сайте Исполнителя.</li> 
-          <li class="privacy-list-item contract-item">3.9. Исполнитель имеет право включить Заказчика в список почтовой рассылки или рассылки другими методами информирования для последующего распространения материалов по оказываемым Услугам или для рассылки иных информационных материалов.</li> 
-          <li class="privacy-list-item contract-item">3.9.1. Заказчик имеет право отказаться от почтовой рассылки или рассылки другими методами информирования, направив просьбу об отписке на электронный адрес welcome@ninaslavina.ru.</li> 
-          <li class="privacy-list-item contract-item">3.10. Заказчик не вправе передавать третьим лицам свой доступ к материалам Исполнителя, а также копировать и распространять предоставленный Исполнителем контент. При нарушении данного пункта настоящего договора Исполнитель вправе запретить Заказчику доступ к уже оплаченным Услугам без возврата ранее оплаченных денежных средств.</li> 
-          <li class="privacy-list-item contract-item">3.11. Заказчик соглашается с тем, что Исполнитель предоставляет доступ к услугам или цифровым продуктам в конечном виде, и не вправе требовать дополнительной доработки оплаченной им услуги или продукта, а также его отдельных компонентов, информационных материалов, а также изменения правил предоставления услуг или доступа к продуктам, описанных положениями настоящего Договора.</li> 
-          <li class="privacy-list-item contract-item">3.12. Условия оказания Услуг могут также сообщаться Исполнителем Заказчику, путем направления соответствующего уведомления на контактный е-mail и/или SMS сообщения на контактный номер телефона Заказчика, в мессенджерах, при этом Заказчик обязан самостоятельно и заблаговременно проверять получение уведомления, исходящего от Исполнителя.</li> 
-          <li class="privacy-list-item contract-item">3.13. Исполнитель имеет право привлекать к оказанию Услуг третьих лиц без предварительного получения на то согласия Заказчика. Привлекаемые третьи лица выбираются по усмотрению Исполнителя.</li> 
-          <li class="privacy-list-item contract-item">3.14. В случае если Заказчик не получает Услугу своевременно по собственной вине или собственному желанию, услуга считается оказанной надлежащим образом.</li> 
-          <li class="privacy-list-item contract-item">3.15. Все Занятия проводятся в онлайн-формате с использованием средств (программ, сервисов) для проведения видеоконференций</li> 
-          <li class="privacy-list-item contract-item">3.16. Расписание Занятий каждого Курса Заказчик получает от Исполнителя в виде ссылки на таблицу в сервисе "Google Sheets"</li>
+          <li class="privacy-list-item contract-item">
+            3.1. Оплата Услуг по выбранному Заказчиком Курсу производится
+            ежемесячно после первого Занятия каждого Модуля
+          </li>
+          <li class="privacy-list-item contract-item">
+            3.2. В случае, если в установленное условиями предоставления Услуги
+            время Заказчик не может приступить к занятиям/подключиться к
+            онлайн-трансляции, Заказчику необходимо уведомить об этом
+            Исполнителя не позднее чем за 72 часа до начала предоставления
+            Услуги. В этому случае Исполнитель рассматривает возможности
+            переноса времени предоставления Услуги Заказчику. При несоблюдении
+            Заказчиком сроков уведомления, Услуга считается оказанной и не
+            переносится на другое время.
+          </li>
+          <li class="privacy-list-item contract-item">
+            3.3. Оплата услуг Исполнителя осуществляется путем оплаты на
+            банковскую карту Исполнителя. Номер карты указан в пункте 9
+            настоящего Договора.
+          </li>
+          <li class="privacy-list-item contract-item">
+            3.3.1. В случае совершения платежа с помощью банковской карты,
+            Заказчику рекомендуется использовать банковскую карту, выпущенную на
+            имя Заказчика. В случае осуществления возврата оплаченных денежных
+            средств, возврат производится по тем же реквизитам, по которым был
+            получен платеж, и на основании личного заявления лица, на чье имя
+            была выпущена банковская карта в соответствии с условиями п. 5.4.
+            настоящего Договора.
+          </li>
+          <li class="privacy-list-item contract-item">
+            3.3.2. В случае неоплаты стоимости Услуг в установленные сроки, при
+            несвоевременном предоставлении данных для оформления заявки либо при
+            указании недостоверных данных при оформлении заявки настоящий
+            Договор не считается заключенным.
+          </li>
+          <li class="privacy-list-item contract-item">
+            3.4. Настоящий Договор является актом об оказании услуги. Услуги
+            считаются оказанными с момента получения доступа к материалам
+            Услуги.
+          </li>
+          <li class="privacy-list-item contract-item">
+            3.6. Обязательство Заказчика по оплате считается исполненным с
+            момента зачисления денежных средств, на расчетный счет Исполнителя.
+          </li>
+          <li class="privacy-list-item contract-item">
+            3.7. Исполнитель обязуется предоставить Заказчику Услугу в срок,
+            заявленный на сайте Исполнителя.
+          </li>
+          <li class="privacy-list-item contract-item">
+            3.8. В случае если Заказчик не получает Услуги своевременно по
+            собственной вине или собственному желанию, Услуги считается
+            оказанными надлежащим образом. В случае если Заказчик не принял
+            участие в вебинаре в режиме реального времени, возврат оплаченных
+            денежных средств не осуществляется, но Заказчику дается возможность
+            доступа к записи вебинара, если это указано в предложении к данной
+            Услуги на сайте Исполнителя.
+          </li>
+          <li class="privacy-list-item contract-item">
+            3.9. Исполнитель имеет право включить Заказчика в список почтовой
+            рассылки или рассылки другими методами информирования для
+            последующего распространения материалов по оказываемым Услугам или
+            для рассылки иных информационных материалов.
+          </li>
+          <li class="privacy-list-item contract-item">
+            3.9.1. Заказчик имеет право отказаться от почтовой рассылки или
+            рассылки другими методами информирования, направив просьбу об
+            отписке на электронный адрес welcome@ninaslavina.ru.
+          </li>
+          <li class="privacy-list-item contract-item">
+            3.10. Заказчик не вправе передавать третьим лицам свой доступ к
+            материалам Исполнителя, а также копировать и распространять
+            предоставленный Исполнителем контент. При нарушении данного пункта
+            настоящего договора Исполнитель вправе запретить Заказчику доступ к
+            уже оплаченным Услугам без возврата ранее оплаченных денежных
+            средств.
+          </li>
+          <li class="privacy-list-item contract-item">
+            3.11. Заказчик соглашается с тем, что Исполнитель предоставляет
+            доступ к услугам или цифровым продуктам в конечном виде, и не вправе
+            требовать дополнительной доработки оплаченной им услуги или
+            продукта, а также его отдельных компонентов, информационных
+            материалов, а также изменения правил предоставления услуг или
+            доступа к продуктам, описанных положениями настоящего Договора.
+          </li>
+          <li class="privacy-list-item contract-item">
+            3.12. Условия оказания Услуг могут также сообщаться Исполнителем
+            Заказчику, путем направления соответствующего уведомления на
+            контактный е-mail и/или SMS сообщения на контактный номер телефона
+            Заказчика, в мессенджерах, при этом Заказчик обязан самостоятельно и
+            заблаговременно проверять получение уведомления, исходящего от
+            Исполнителя.
+          </li>
+          <li class="privacy-list-item contract-item">
+            3.13. Исполнитель имеет право привлекать к оказанию Услуг третьих
+            лиц без предварительного получения на то согласия Заказчика.
+            Привлекаемые третьи лица выбираются по усмотрению Исполнителя.
+          </li>
+          <li class="privacy-list-item contract-item">
+            3.14. В случае если Заказчик не получает Услугу своевременно по
+            собственной вине или собственному желанию, услуга считается
+            оказанной надлежащим образом.
+          </li>
+          <li class="privacy-list-item contract-item">
+            3.15. Все Занятия проводятся в онлайн-формате с использованием
+            средств (программ, сервисов) для проведения видеоконференций
+          </li>
+          <li class="privacy-list-item contract-item">
+            3.16. Расписание Занятий каждого Курса Заказчик получает от
+            Исполнителя в виде ссылки на таблицу в сервисе "Google Sheets"
+          </li>
         </ul>
-        <p class="privacy-list-title-item">4. Особые условия</p> 
+        <p class="privacy-list-title-item">4. Особые условия</p>
         <ul class="privacy-list">
-          <li class="privacy-list-item contract-item">4.1. Информация, передаваемая в рамках оказания Услуг, является интеллектуальной собственностью Исполнителя и подлежит охране в соответствии с законодательством Российской Федерации. Распространение полученной в рамках Услуг информации в коммерческих целях недопустимо. Заказчик обязуется не копировать записи Услуг и не предоставлять ее третьим лицам или размещать в открытом доступе на других сайтах. Заказчику запрещается распространять, публиковать, размещать в сети Интернет, копировать, передавать или продавать третьим лицам, осуществлять запись, скачивание, изготовление скриншотов и фотографий записей аудиовизуальных произведений и другого контента, предоставляемого в рамках оказания Услуг по настоящему Договору. Заказчику запрещается сохранять и передавать третьим лицам переписку других участников курса, информацию и любые материалы, полученные в рамках настоящего Договора, создавать на их основе информационные продукты, а также использовать эту информацию каким-либо иным образом, кроме как для личного пользования в рамках настоящего Договора. В случае нарушения данных обязательств, Исполнитель вправе требовать с Заказчика возмещения понесенных убытков, а также компенсации упущенной выгоды в соответствии с действующим законодательством РФ.</li> 
-          <li class="privacy-list-item contract-item">4.2. В соответствии с требованиями Федерального закона от 27.07.2006 № 152 – ФЗ «О персональных данных» Заказчик (субъект персональных данных), принимая условия настоящего Договора-оферты, дает согласие на обработку всех своих персональных данных, предоставляемых Исполнителю, а также на их передачу лицам, с которыми у Исполнителя имеются договорные отношения по исполнению условий настоящего Договора-оферты и оказанию услуги Заказчику. Обработка персональных данных Заказчика осуществляется в соответствии с законодательством РФ, а также в соответствии с Политикой конфиденциальности, являющейся локальным документами Исполнителя.</li> 
-          <li class="privacy-list-item contract-item">4.3. Исполнитель имеет право незамедлительно прекратить оказание услуг без возвращения денежных средств, в случае проявления со стороны Заказчика агрессии или неуважительного отношения к Исполнителю, другим Заказчикам, в случае использования ненормативной лексики и проявления агрессии, посягательства на честь и достоинство людей, а также в случаях разжигания межнациональных конфликтов, отвлечения других участников от получения Услуг, рассылки спама, размещения рекламы. Настоящим Заказчик подтверждает, что предоплаченная им стоимость услуг в случаях, указанных в настоящем пункте, признается Сторонами как неустойка за нарушение Заказчиком условий Договора и Заказчику не возвращается.</li> 
-          <li class="privacy-list-item contract-item">4.4. Все персональные данные обрабатываются Исполнителем в соответствии с требованиями Федерального закона 152-ФЗ «О персональных данных» и в соответствии с Политикой конфиденциальности, размещенной на Сайте.</li>
-          <li class="privacy-list-item contract-item">4.5. Исполнитель обязуется сохранять и не разглашать конфиденциальную информацию, ставшую ему известной от Заказчика при оказании Услуг по настоящему Договору.</li> 
+          <li class="privacy-list-item contract-item">
+            4.1. Информация, передаваемая в рамках оказания Услуг, является
+            интеллектуальной собственностью Исполнителя и подлежит охране в
+            соответствии с законодательством Российской Федерации.
+            Распространение полученной в рамках Услуг информации в коммерческих
+            целях недопустимо. Заказчик обязуется не копировать записи Услуг и
+            не предоставлять ее третьим лицам или размещать в открытом доступе
+            на других сайтах. Заказчику запрещается распространять, публиковать,
+            размещать в сети Интернет, копировать, передавать или продавать
+            третьим лицам, осуществлять запись, скачивание, изготовление
+            скриншотов и фотографий записей аудиовизуальных произведений и
+            другого контента, предоставляемого в рамках оказания Услуг по
+            настоящему Договору. Заказчику запрещается сохранять и передавать
+            третьим лицам переписку других участников курса, информацию и любые
+            материалы, полученные в рамках настоящего Договора, создавать на их
+            основе информационные продукты, а также использовать эту информацию
+            каким-либо иным образом, кроме как для личного пользования в рамках
+            настоящего Договора. В случае нарушения данных обязательств,
+            Исполнитель вправе требовать с Заказчика возмещения понесенных
+            убытков, а также компенсации упущенной выгоды в соответствии с
+            действующим законодательством РФ.
+          </li>
+          <li class="privacy-list-item contract-item">
+            4.2. В соответствии с требованиями Федерального закона от 27.07.2006
+            № 152 – ФЗ «О персональных данных» Заказчик (субъект персональных
+            данных), принимая условия настоящего Договора-оферты, дает согласие
+            на обработку всех своих персональных данных, предоставляемых
+            Исполнителю, а также на их передачу лицам, с которыми у Исполнителя
+            имеются договорные отношения по исполнению условий настоящего
+            Договора-оферты и оказанию услуги Заказчику. Обработка персональных
+            данных Заказчика осуществляется в соответствии с законодательством
+            РФ, а также в соответствии с Политикой конфиденциальности,
+            являющейся локальным документами Исполнителя.
+          </li>
+          <li class="privacy-list-item contract-item">
+            4.3. Исполнитель имеет право незамедлительно прекратить оказание
+            услуг без возвращения денежных средств, в случае проявления со
+            стороны Заказчика агрессии или неуважительного отношения к
+            Исполнителю, другим Заказчикам, в случае использования ненормативной
+            лексики и проявления агрессии, посягательства на честь и достоинство
+            людей, а также в случаях разжигания межнациональных конфликтов,
+            отвлечения других участников от получения Услуг, рассылки спама,
+            размещения рекламы. Настоящим Заказчик подтверждает, что
+            предоплаченная им стоимость услуг в случаях, указанных в настоящем
+            пункте, признается Сторонами как неустойка за нарушение Заказчиком
+            условий Договора и Заказчику не возвращается.
+          </li>
+          <li class="privacy-list-item contract-item">
+            4.4. Все персональные данные обрабатываются Исполнителем в
+            соответствии с требованиями Федерального закона 152-ФЗ «О
+            персональных данных» и в соответствии с Политикой
+            конфиденциальности, размещенной на Сайте.
+          </li>
+          <li class="privacy-list-item contract-item">
+            4.5. Исполнитель обязуется сохранять и не разглашать
+            конфиденциальную информацию, ставшую ему известной от Заказчика при
+            оказании Услуг по настоящему Договору.
+          </li>
         </ul>
-        <p class="privacy-list-title-item">5. Ответственность сторон</p> 
+        <p class="privacy-list-title-item">5. Ответственность сторон</p>
         <ul class="privacy-list">
-          <li class="privacy-list-item contract-item">5.1. В случае отсутствия технической возможности проведения Услуги в режиме реального времени (вебинар/ прямой эфир/ трансляция), со стороны Исполнителя, по независящим от Исполнителя причинам: неполадках в интернет-соединении, сбоях в работе технической площадки-партнёра, отключения света, Исполнитель обязуется провести вебинар/ прямой эфир/ трансляцию в другое время и, в случае невозможности Заказчика участвовать в другое время, предоставить ему запись.</li> 
-          <li class="privacy-list-item contract-item">5.2. Исполнитель не несет ответственности за невозможность обслуживания Заказчика по причинам, связанным с нарушением работы Интернет-канала, оборудования или программного обеспечения со стороны Заказчика.</li> 
-          <li class="privacy-list-item contract-item">5.3. За невыполнение или ненадлежащее выполнение обязательств по настоящей публичной оферте Стороны несут ответственность в соответствии с действующим законодательством Российской Федерации.</li> 
-          <li class="privacy-list-item contract-item">5.4. Заказчик обязуется направлять претензии, запросы, предложения и прочее посредствам электронной переписки с электронного адреса, указанного в Анкете участника по электронной почте Исполнителя welcome@ninaslavina.ru. Переписка в социальных сетях не будет считаться совершенной от имени Заказчика. Претензия считается полученной Исполнителем при условии предоставления Заказчиком скана паспорта, подписанной и отсканированной претензии и документов, подтверждающих факт оплаты Услуг. Заявление на возврат принимается при условии предоставления Заказчиком указанных выше документов, а также при условии предоставления банковских реквизитов для осуществления возврата.</li> 
-          <li class="privacy-list-item contract-item">5.5. Заказчик обязуется направлять Исполнителю все претензии, касающиеся качества оказываемых образовательных услуг, в срок, не превышающий 1 (один) день с даты получения доступа к предоставленным Исполнителем материалам/урокам/мастер-классам, по электронной почте welcome@ninaslavina.ru. В случае, если претензии не получены Исполнителем, Услуги считаются оказанными надлежащим образом и в полном объеме.</li> 
-          <li class="privacy-list-item contract-item">5.6. Исполнитель не несет ответственности за неверную (недостоверную) информацию, указанную Заказчиком в Анкете участника.</li> 
-          <li class="privacy-list-item contract-item">5.7. Исполнитель обязуется вернуть Заказчику ошибочно оплаченные денежные средства за Услуги по письменному требованию Заказчика. Исполнитель принимает требования о возврате денежных средств, уплаченных Заказчиком за Услугу, оказываемую в режиме реального времени не позднее 72 часов до начала соответствующего вебинара/ прямого эфира/ трансляции.</li> 
-          <li class="privacy-list-item contract-item">5.8. Исполнитель принимает требования о возврате денежных средств, уплаченных Заказчиком за Услугу в виде Курса/ мастер-класса/ иных форматов, предоставляемых в записи, до момента получения Заказчиком материалов. В случае, когда материалы Заказчиком получены – возврат не осуществляется.</li> 
-          <li class="privacy-list-item contract-item">5.9. Исполнитель не несет ответственности за ненадлежащее качество оказания Услуг, если ненадлежащее исполнение явилось следствием недостоверности, недостаточности или несвоевременности предоставленных Заказчиком сведений, а также вследствие других нарушений условий настоящего Договора со стороны Заказчика.</li> 
-          <li class="privacy-list-item contract-item">5.10. Исполнитель не несет ответственности за несоответствие предоставленной услуги ожиданиям Заказчика и/или за его субъективную оценку. Такое несоответствие ожиданиям и/или отрицательная субъективная оценка не являются основаниями считать услуги оказанными некачественно, или не в согласованном объеме.</li> 
-          <li class="privacy-list-item contract-item">5.13. При отказе от Услуг Заказчик обязан возместить фактические расходы Исполнителя, в том числе, все комиссии платежных систем, взимаемые при переводе денежных средств на счет Исполнителя и со счета Исполнителя в адрес Заказчика.</li> 
+          <li class="privacy-list-item contract-item">
+            5.1. В случае отсутствия технической возможности проведения Услуги в
+            режиме реального времени (вебинар/ прямой эфир/ трансляция), со
+            стороны Исполнителя, по независящим от Исполнителя причинам:
+            неполадках в интернет-соединении, сбоях в работе технической
+            площадки-партнёра, отключения света, Исполнитель обязуется провести
+            вебинар/ прямой эфир/ трансляцию в другое время и, в случае
+            невозможности Заказчика участвовать в другое время, предоставить ему
+            запись.
+          </li>
+          <li class="privacy-list-item contract-item">
+            5.2. Исполнитель не несет ответственности за невозможность
+            обслуживания Заказчика по причинам, связанным с нарушением работы
+            Интернет-канала, оборудования или программного обеспечения со
+            стороны Заказчика.
+          </li>
+          <li class="privacy-list-item contract-item">
+            5.3. За невыполнение или ненадлежащее выполнение обязательств по
+            настоящей публичной оферте Стороны несут ответственность в
+            соответствии с действующим законодательством Российской Федерации.
+          </li>
+          <li class="privacy-list-item contract-item">
+            5.4. Заказчик обязуется направлять претензии, запросы, предложения и
+            прочее посредствам электронной переписки с электронного адреса,
+            указанного в Анкете участника по электронной почте Исполнителя
+            welcome@ninaslavina.ru. Переписка в социальных сетях не будет
+            считаться совершенной от имени Заказчика. Претензия считается
+            полученной Исполнителем при условии предоставления Заказчиком скана
+            паспорта, подписанной и отсканированной претензии и документов,
+            подтверждающих факт оплаты Услуг. Заявление на возврат принимается
+            при условии предоставления Заказчиком указанных выше документов, а
+            также при условии предоставления банковских реквизитов для
+            осуществления возврата.
+          </li>
+          <li class="privacy-list-item contract-item">
+            5.5. Заказчик обязуется направлять Исполнителю все претензии,
+            касающиеся качества оказываемых образовательных услуг, в срок, не
+            превышающий 1 (один) день с даты получения доступа к предоставленным
+            Исполнителем материалам/урокам/мастер-классам, по электронной почте
+            welcome@ninaslavina.ru. В случае, если претензии не получены
+            Исполнителем, Услуги считаются оказанными надлежащим образом и в
+            полном объеме.
+          </li>
+          <li class="privacy-list-item contract-item">
+            5.6. Исполнитель не несет ответственности за неверную
+            (недостоверную) информацию, указанную Заказчиком в Анкете участника.
+          </li>
+          <li class="privacy-list-item contract-item">
+            5.7. Исполнитель обязуется вернуть Заказчику ошибочно оплаченные
+            денежные средства за Услуги по письменному требованию Заказчика.
+            Исполнитель принимает требования о возврате денежных средств,
+            уплаченных Заказчиком за Услугу, оказываемую в режиме реального
+            времени не позднее 72 часов до начала соответствующего вебинара/
+            прямого эфира/ трансляции.
+          </li>
+          <li class="privacy-list-item contract-item">
+            5.8. Исполнитель принимает требования о возврате денежных средств,
+            уплаченных Заказчиком за Услугу в виде Курса/ мастер-класса/ иных
+            форматов, предоставляемых в записи, до момента получения Заказчиком
+            материалов. В случае, когда материалы Заказчиком получены – возврат
+            не осуществляется.
+          </li>
+          <li class="privacy-list-item contract-item">
+            5.9. Исполнитель не несет ответственности за ненадлежащее качество
+            оказания Услуг, если ненадлежащее исполнение явилось следствием
+            недостоверности, недостаточности или несвоевременности
+            предоставленных Заказчиком сведений, а также вследствие других
+            нарушений условий настоящего Договора со стороны Заказчика.
+          </li>
+          <li class="privacy-list-item contract-item">
+            5.10. Исполнитель не несет ответственности за несоответствие
+            предоставленной услуги ожиданиям Заказчика и/или за его субъективную
+            оценку. Такое несоответствие ожиданиям и/или отрицательная
+            субъективная оценка не являются основаниями считать услуги
+            оказанными некачественно, или не в согласованном объеме.
+          </li>
+          <li class="privacy-list-item contract-item">
+            5.13. При отказе от Услуг Заказчик обязан возместить фактические
+            расходы Исполнителя, в том числе, все комиссии платежных систем,
+            взимаемые при переводе денежных средств на счет Исполнителя и со
+            счета Исполнителя в адрес Заказчика.
+          </li>
         </ul>
-        <p class="privacy-list-title-item">6. Срок действия и изменение Договора Оферты</p>  
+        <p class="privacy-list-title-item">
+          6. Срок действия и изменение Договора Оферты
+        </p>
         <ul class="privacy-list">
-          <li class="privacy-list-item contract-item">6.1. Настоящий Договор-оферта вступает в силу с момента акцепта Заказчика и действует до момента исполнения Сторонами своих обязательств.</li> 
-          <li class="privacy-list-item contract-item">6.2. Все споры и разногласия решаются путем переговоров Сторон. Сторона, получившая претензию, рассматривает в течение 15 календарных дней со дня ее получения и сообщает в письменном виде другой Стороне свое решения относительно требований, изложенных в претензии.</li> 
-          <li class="privacy-list-item contract-item">6.3. Все вопросы, не урегулированные настоящим Договором Оферты, решаются по месту жительства Исполнителя.</li> 
-          <li class="privacy-list-item contract-item">6.4. Стороны признают, что, если какое-либо из положений Договора-оферты становится недействительным в течение срока его действия вследствие изменения законодательства, остальные положения Договора-оферты обязательны для Сторон в течение срока действия Договора-оферты.</li> 
-          <li class="privacy-list-item contract-item">6.5. Самостоятельное прекращение обучения Заказчиком является основанием для расторжения заключенного с ним договора. Оплаченная за Услуги сумма не возвращается.</li> 
-          <li class="privacy-list-item contract-item">6.6. Во всем остальном, что не предусмотрено настоящим Договором-офертой, Стороны руководствуются действующим законодательством Российской Федерации.</li> 
+          <li class="privacy-list-item contract-item">
+            6.1. Настоящий Договор-оферта вступает в силу с момента акцепта
+            Заказчика и действует до момента исполнения Сторонами своих
+            обязательств.
+          </li>
+          <li class="privacy-list-item contract-item">
+            6.2. Все споры и разногласия решаются путем переговоров Сторон.
+            Сторона, получившая претензию, рассматривает в течение 15
+            календарных дней со дня ее получения и сообщает в письменном виде
+            другой Стороне свое решения относительно требований, изложенных в
+            претензии.
+          </li>
+          <li class="privacy-list-item contract-item">
+            6.3. Все вопросы, не урегулированные настоящим Договором Оферты,
+            решаются по месту жительства Исполнителя.
+          </li>
+          <li class="privacy-list-item contract-item">
+            6.4. Стороны признают, что, если какое-либо из положений
+            Договора-оферты становится недействительным в течение срока его
+            действия вследствие изменения законодательства, остальные положения
+            Договора-оферты обязательны для Сторон в течение срока действия
+            Договора-оферты.
+          </li>
+          <li class="privacy-list-item contract-item">
+            6.5. Самостоятельное прекращение обучения Заказчиком является
+            основанием для расторжения заключенного с ним договора. Оплаченная
+            за Услуги сумма не возвращается.
+          </li>
+          <li class="privacy-list-item contract-item">
+            6.6. Во всем остальном, что не предусмотрено настоящим
+            Договором-офертой, Стороны руководствуются действующим
+            законодательством Российской Федерации.
+          </li>
         </ul>
-        <p class="privacy-list-title-item">7. Отказ от ответственности за получение результата</p> 
+        <p class="privacy-list-title-item">
+          7. Отказ от ответственности за получение результата
+        </p>
         <ul class="privacy-list">
-          <li class="privacy-list-item contract-item">7.1. Все заявления о получении результатов, а также примеры получения качественных результатов, которые могут быть размещены на Сайте Исполнителя, являются только прогнозируемой оценкой возможных результатов и не гарантируют его получения в полном объеме.</li>  
-          <li class="privacy-list-item contract-item">7.2. Отзывы пользователей, приведенные на Сайте Исполнителя являются индивидуальными достижениями/результатами отдельных людей. Данные результаты не являются типичными или гарантированными. Результаты Заказчика будут зависеть от решений и действий Заказчика.</li>  
-          <li class="privacy-list-item contract-item">7.3. Считая предполагаемый результат гарантированным, Заказчик принимает на себя также риск его неполучения или получения в индивидуальном объеме.</li>  
-          <li class="privacy-list-item contract-item">7.4. При указании конкретного примера положительного результата относительно конкретного лица — это не гарантирует получение Заказчиком аналогичного результата.</li>  
-          <li class="privacy-list-item contract-item">7.5. Любые заявления и представления, размещенные Сайте Исполнителя, касающиеся получения возможного результата, не считаются обязательным результатом для каждого человека.</li>  
-          <li class="privacy-list-item contract-item">7.6. Получение результата зависит от многих факторов. Исполнитель не располагает информацией о том, насколько эффективно Заказчик будете применять данную Исполнителем информацию в будущем, а также касающейся лично Заказчика, анкетных данных Заказчика, используемых этических принципах, и не гарантируем вытекающей вероятности получения каких-либо больших, малых и вообще каких-либо результатов.</li>  
-          <li class="privacy-list-item contract-item">7.7. Все продукты и Услуги Исполнителя предназначены исключительно для использования в образовательных или ознакомительных целях.</li>  
-          <li class="privacy-list-item contract-item">7.8. Принимая условия настоящего Договора-оферты, Заказчик дает свое согласие, что Исполнитель не несет ответственности за правильность или ошибочность принятых Заказчиком решений в отношении чего-либо, относительно какой-либо информации, полученной при оказании Услуг Исполнителем.</li>  
-          <li class="privacy-list-item contract-item">7.9. Исполнитель не несет ответственности за результат использования или полезность Консультаций и иных предоставляемых услуг.</li>  
-          <li class="privacy-list-item contract-item">7.10. Исполнитель не несет ответственности за ущерб, причиненный Заказчику вследствие ненадлежащего им использования результата оказанных услуг.</li>  
+          <li class="privacy-list-item contract-item">
+            7.1. Все заявления о получении результатов, а также примеры
+            получения качественных результатов, которые могут быть размещены на
+            Сайте Исполнителя, являются только прогнозируемой оценкой возможных
+            результатов и не гарантируют его получения в полном объеме.
+          </li>
+          <li class="privacy-list-item contract-item">
+            7.2. Отзывы пользователей, приведенные на Сайте Исполнителя являются
+            индивидуальными достижениями/результатами отдельных людей. Данные
+            результаты не являются типичными или гарантированными. Результаты
+            Заказчика будут зависеть от решений и действий Заказчика.
+          </li>
+          <li class="privacy-list-item contract-item">
+            7.3. Считая предполагаемый результат гарантированным, Заказчик
+            принимает на себя также риск его неполучения или получения в
+            индивидуальном объеме.
+          </li>
+          <li class="privacy-list-item contract-item">
+            7.4. При указании конкретного примера положительного результата
+            относительно конкретного лица — это не гарантирует получение
+            Заказчиком аналогичного результата.
+          </li>
+          <li class="privacy-list-item contract-item">
+            7.5. Любые заявления и представления, размещенные Сайте Исполнителя,
+            касающиеся получения возможного результата, не считаются
+            обязательным результатом для каждого человека.
+          </li>
+          <li class="privacy-list-item contract-item">
+            7.6. Получение результата зависит от многих факторов. Исполнитель не
+            располагает информацией о том, насколько эффективно Заказчик будете
+            применять данную Исполнителем информацию в будущем, а также
+            касающейся лично Заказчика, анкетных данных Заказчика, используемых
+            этических принципах, и не гарантируем вытекающей вероятности
+            получения каких-либо больших, малых и вообще каких-либо результатов.
+          </li>
+          <li class="privacy-list-item contract-item">
+            7.7. Все продукты и Услуги Исполнителя предназначены исключительно
+            для использования в образовательных или ознакомительных целях.
+          </li>
+          <li class="privacy-list-item contract-item">
+            7.8. Принимая условия настоящего Договора-оферты, Заказчик дает свое
+            согласие, что Исполнитель не несет ответственности за правильность
+            или ошибочность принятых Заказчиком решений в отношении чего-либо,
+            относительно какой-либо информации, полученной при оказании Услуг
+            Исполнителем.
+          </li>
+          <li class="privacy-list-item contract-item">
+            7.9. Исполнитель не несет ответственности за результат использования
+            или полезность Консультаций и иных предоставляемых услуг.
+          </li>
+          <li class="privacy-list-item contract-item">
+            7.10. Исполнитель не несет ответственности за ущерб, причиненный
+            Заказчику вследствие ненадлежащего им использования результата
+            оказанных услуг.
+          </li>
         </ul>
         <p class="privacy-list-title-item">8. Форс-мажор</p>
         <ul class="privacy-list">
-          <li class="privacy-list-item contract-item">8.1. Стороны освобождаются от ответственности за полное или частичное неисполнение обязательств по Договору-оферте в случае, если неисполнение обязательств явилось следствием действий непреодолимой силы, а именно: пожара, наводнения, землетрясения, забастовки, войны, действий органов государственной власти или других независящих от Сторон обстоятельств.</li>
-          <li class="privacy-list-item contract-item">8.2. Сторона, которая не может выполнить обязательства по Договору-оферте, должна своевременно, но не позднее пяти календарных дней после наступления обстоятельств непреодолимой силы, письменно известить другую Сторону, с предоставлением обосновывающих документов, выданных компетентными органами.</li>
-          <li class="privacy-list-item contract-item">8.3. Исполнитель не несет ответственности за временные сбои и перерывы в работе интернет ресурсов Исполнителя, вызванные обстоятельствами непреодолимой силы, и повлекшую за этим потерю информации.</li>
+          <li class="privacy-list-item contract-item">
+            8.1. Стороны освобождаются от ответственности за полное или
+            частичное неисполнение обязательств по Договору-оферте в случае,
+            если неисполнение обязательств явилось следствием действий
+            непреодолимой силы, а именно: пожара, наводнения, землетрясения,
+            забастовки, войны, действий органов государственной власти или
+            других независящих от Сторон обстоятельств.
+          </li>
+          <li class="privacy-list-item contract-item">
+            8.2. Сторона, которая не может выполнить обязательства по
+            Договору-оферте, должна своевременно, но не позднее пяти календарных
+            дней после наступления обстоятельств непреодолимой силы, письменно
+            известить другую Сторону, с предоставлением обосновывающих
+            документов, выданных компетентными органами.
+          </li>
+          <li class="privacy-list-item contract-item">
+            8.3. Исполнитель не несет ответственности за временные сбои и
+            перерывы в работе интернет ресурсов Исполнителя, вызванные
+            обстоятельствами непреодолимой силы, и повлекшую за этим потерю
+            информации.
+          </li>
         </ul>
-        <p class="privacy-list-title-item">9. Реквизиты:</p> 
+        <p class="privacy-list-title-item">9. Реквизиты:</p>
         <ul class="privacy-list">
-          <li class="privacy-list-item contract-item">Самозанятая Славина Нина Сергеевна</li>
-          <li class="privacy-list-item contract-item">email для связи welcome@ninaslavina.ru</li> 
-          <li class="privacy-list-item contract-item">Веб-сайт www.ninaslavina.ru</li> 
+          <li class="privacy-list-item contract-item">
+            Самозанятая Славина Нина Сергеевна
+          </li>
+          <li class="privacy-list-item contract-item">
+            email для связи welcome@ninaslavina.ru
+          </li>
+          <li class="privacy-list-item contract-item">
+            Веб-сайт www.ninaslavina.ru
+          </li>
           <li class="privacy-list-item contract-item">ИНН 615107529920</li>
-          <li class="privacy-list-item contract-item">Банковский счёт ПАО «Сбербанк» г. МОСКВА</li>
-          <li class="privacy-list-item contract-item">Расчётный счёт 40817810638180365767</li>
-          <li class="privacy-list-item contract-item">Номер банковской карты карты 2202 2001 9064 6578</li>
-          <li class="privacy-list-item contract-item">Валюта счёта российский рубль</li>
-          <li class="privacy-list-item contract-item">Корреспондентский счёт 30101810400000000225</li>
+          <li class="privacy-list-item contract-item">
+            Банковский счёт ПАО «Сбербанк» г. МОСКВА
+          </li>
+          <li class="privacy-list-item contract-item">
+            Расчётный счёт 40817810638180365767
+          </li>
+          <li class="privacy-list-item contract-item">
+            Номер банковской карты карты 2202 2001 9064 6578
+          </li>
+          <li class="privacy-list-item contract-item">
+            Валюта счёта российский рубль
+          </li>
+          <li class="privacy-list-item contract-item">
+            Корреспондентский счёт 30101810400000000225
+          </li>
           <li class="privacy-list-item contract-item">БИК 044525225</li>
         </ul>
+      </div>
     </div>
-  </div>
-  <script src="js/jquery-3.6.0.min.js"></script>
-  <script src="js/ScrollToPlugin.min.js"></script>
-  <script src="js/jquery.validate.min.js"></script>
-  <script src="js/jquery-ui.min.js"></script>
-  <script src="js/swiper.min.js"></script>
-  <script src="js/jquery.maskedinput.min.js"></script>
-  <script src="js/script.js"></script>
-</body>
-
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/ScrollToPlugin.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
 </html>
