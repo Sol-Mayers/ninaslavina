@@ -1,18 +1,18 @@
 /*Показ дополнительных картинок*/
-let more = document.querySelectorAll('.news__deeper');
-let box = document.querySelectorAll('.news__img');
+let more = document.querySelectorAll(".news__deeper");
+let box = document.querySelectorAll(".news__img");
 
 for (let i = 0; i < more.length; i++) {
-  more[i].addEventListener('click', function() {
+  more[i].addEventListener("click", function () {
     let showPerClick = 3;
-    let hidden = this.parentNode.querySelectorAll('img.hidden');
-    if(hidden.length > 0) {
+    let hidden = this.parentNode.querySelectorAll("img.hidden");
+    if (hidden.length > 0) {
       for (let i = 0; i < showPerClick; i++) {
-        if (!hidden[i]) return this.outerHTML = "";
-        hidden[i].classList.add('news__img');
-        hidden[i].classList.remove('hidden');
+        if (!hidden[i]) return (this.outerHTML = "");
+        hidden[i].classList.add("news__img");
+        hidden[i].classList.remove("hidden");
       }
-    };
+    }
   });
 }
 
@@ -30,83 +30,87 @@ subscribeButton.addEventListener('click', function(){
 });*/
 
 /*Валидация и AJAX для основной формы*/
-$( document ).ready(function() {
-  $('button[type="submit"]').click(function(){
-  /*Валидация полей формы*/
-    $.validator.addMethod("lettersonly", function(value, element) {
-      return this.optional(element) || /^[а-яА-ЯёЁa-zA-Z\-\ ]+$/.test(value);
-    }, "Цифры в имени не допустимы");
+$(document).ready(function () {
+  $('button[type="submit"]').click(function () {
+    /*Валидация полей формы*/
+    $.validator.addMethod(
+      "lettersonly",
+      function (value, element) {
+        return this.optional(element) || /^[а-яА-ЯёЁa-zA-Z\-\ ]+$/.test(value);
+      },
+      "Цифры в имени не допустимы"
+    );
 
-    $('#mainform').validate({
-    //Правила валидации
-    rules: {
-      name: {
-        required: true,
-        lettersonly: true,
+    $("#mainform").validate({
+      //Правила валидации
+      rules: {
+        name: {
+          required: true,
+          lettersonly: true,
+        },
+        email: {
+          required: true,
+          email: true,
+        },
+        phone: {
+          required: true,
+        },
+        text: {
+          required: false,
+        },
+        typeofwork: {
+          required: true,
+        },
+        typeofproduct: {
+          required: true,
+        },
       },
-      email: {
-        required: true,
-        email: true
+      //Сообщения об ошибках
+      messages: {
+        name: {
+          required: "Заполните поле",
+        },
+        email: {
+          required: "Заполните поле",
+          email: "Неверный формат Email",
+        },
+        text: {
+          required: "Заполните поле",
+        },
+        phone: {
+          required: "Заполните поле",
+        },
+        typeofproduct: {
+          required: "Заполните поле",
+        },
+        typeofwork: {
+          required: "Заполните поле",
+        },
       },
-      phone: {
-        required: true,
-      },
-      text: {
-        required: false,
-      },
-      typeofwork: {
-        required: true,
-      },
-      typeofproduct: {
-        required: true,
-      },
-    },
-  //Сообщения об ошибках
-    messages: {
-      name: {
-        required: "Заполните поле",
-      },
-      email: {
-        required: "Заполните поле",
-        email: "Неверный формат Email",
-      },
-      text: {
-        required: "Заполните поле",
-      },
-      phone: {
-        required: "Заполните поле",
-      },
-      typeofproduct: {
-        required: "Заполните поле",
-      },
-      typeofwork: {
-        required: "Заполните поле",
-      }
-    },
 
-    //Место вывода сообщения об ошибке
-      errorElement: 'span',
-      errorClass: 'invalid',
-      validClass: 'valid',
-      errorPlacement: function(error, element) {
+      //Место вывода сообщения об ошибке
+      errorElement: "span",
+      errorClass: "invalid",
+      validClass: "valid",
+      errorPlacement: function (error, element) {
         element.before(error);
       },
-      highlight: function(element, errorClass) {
+      highlight: function (element, errorClass) {
         $(element).removeClass(errorClass);
-        $(element).addClass('fieldinvalid');
-    },
-      unhighlight: function(element, errorClass, validClass) {
+        $(element).addClass("fieldinvalid");
+      },
+      unhighlight: function (element, errorClass, validClass) {
         $(element).removeClass(errorClass);
-        $(element).removeClass('fieldinvalid');
+        $(element).removeClass("fieldinvalid");
         $(element).addClass(validClass);
-    },
-  /*Отправка формы в случае успеха валидации*/
-    submitHandler: function(){
-         sendAjaxForm('mainform', 'ajax-form.php');
-     return false;
-    }
+      },
+      /*Отправка формы в случае успеха валидации*/
+      submitHandler: function () {
+        sendAjaxForm("mainform", "ajax-form.php");
+        return false;
+      },
+    });
   });
-});
 
   function sendAjaxForm(mainform, url) {
     $.ajax({
@@ -114,54 +118,83 @@ $( document ).ready(function() {
       type: "POST",
       dataType: "html",
       data: $("#" + mainform).serialize(),
-      success: function(response) { //Данные отправлены успешно
-        let alertSuccess = document.querySelector('.alert__success');
-        let popupThanks = document.querySelector('.popup-thanks');
-        alertSuccess.classList.add('add_alert_shift');
-        popupThanks.classList.add('add_alert_popup');
+      success: function (response) {
+        //Данные отправлены успешно
+        let alertSuccess = document.querySelector(".alert__success");
+        let popupThanks = document.querySelector(".popup-thanks");
+        alertSuccess.classList.add("add_alert_shift");
+        popupThanks.classList.add("add_alert_popup");
       },
-      error: function(response) { // Данные не отправлены
-        let alertError = document.querySelector('.alert__error');
-        alertError.classList.add('add_alert_shift');
-      }
+      error: function (response) {
+        // Данные не отправлены
+        let alertError = document.querySelector(".alert__error");
+        alertError.classList.add("add_alert_shift");
+      },
     });
   }
 });
 
-
 /*Скроллы для меню*/
-let upperMenuCheck = document.querySelector('.upper-menu');
-let middleMenuCheck = document.querySelector('.portfolio-title');
+let upperMenuCheck = document.querySelector(".upper-menu");
+let middleMenuCheck = document.querySelector(".portfolio-title");
 
-$('.home-item-click').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top
-    }, 1000, 'easeInOutCubic');
-    return false;
+$(".home-item-click").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop: $($(this).attr("href")).offset().top,
+    },
+    1000,
+    "easeInOutCubic"
+  );
+  return false;
 });
-$('.port-item-click').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top - (middleMenuCheck.offsetHeight + 10)
-    }, 1000, 'easeInOutCubic');
-    return false;
+$(".port-item-click").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop:
+        $($(this).attr("href")).offset().top -
+        (middleMenuCheck.offsetHeight + 10),
+    },
+    1000,
+    "easeInOutCubic"
+  );
+  return false;
 });
-$('.how-to-work-click').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top - (middleMenuCheck.offsetHeight / 2.5)
-    }, 1000, 'easeInOutCubic');
-    return false;
+$(".how-to-work-click").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop:
+        $($(this).attr("href")).offset().top -
+        middleMenuCheck.offsetHeight / 2.5,
+    },
+    1000,
+    "easeInOutCubic"
+  );
+  return false;
 });
-$('.price-click').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top - (middleMenuCheck.offsetHeight + 10)
-    }, 1000, 'easeInOutCubic');
-    return false;
+$(".price-click").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop:
+        $($(this).attr("href")).offset().top -
+        (middleMenuCheck.offsetHeight + 10),
+    },
+    1000,
+    "easeInOutCubic"
+  );
+  return false;
 });
-$('.order-click').click(function(){
-    $('html, body').animate({
-        scrollTop: $( $(this).attr('href') ).offset().top - (middleMenuCheck.offsetHeight + 10)
-    }, 1000, 'easeInOutCubic');
-    return false;
+$(".order-click").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop:
+        $($(this).attr("href")).offset().top -
+        (middleMenuCheck.offsetHeight + 10),
+    },
+    1000,
+    "easeInOutCubic"
+  );
+  return false;
 });
 
 /*
@@ -193,60 +226,58 @@ $('.order-click').click(function(){
   };
 */
 
-
-
-
 /*Swiper*/
 popup = {
-  init: function(){
-    $('figure').click(function(){
+  init: function () {
+    $("figure").click(function () {
       popup.open($(this));
-      let captions = document.querySelectorAll('.education-wrap__list-item');
-      for (let i = 0; i <= captions.length -1; i++) {
-        captions[i].classList.add('hide-caption');
+      let captions = document.querySelectorAll(".education-wrap__list-item");
+      for (let i = 0; i <= captions.length - 1; i++) {
+        captions[i].classList.add("hide-caption");
       }
     });
-    
-    $(document).on('click', '.popup img', function(){
-      return false;
-    }).on('click', '.popup', function(){
-      popup.close();
-    })
+
+    $(document)
+      .on("click", ".popup img", function () {
+        return false;
+      })
+      .on("click", ".popup", function () {
+        popup.close();
+      });
   },
-  open: function($figure) {
-    $('.gallery').addClass('pop');
-    $popup = $('<div class="popup" />').appendTo($('body'));
-    $fig = $figure.clone().appendTo($('.popup'));
-    $bg = $('<div class="bg" />').appendTo($('.popup'));
-    $close = $('<div class="close"><svg><use xlink:href="#close"></use></svg></div>').appendTo($fig);
+  open: function ($figure) {
+    $(".gallery").addClass("pop");
+    $popup = $('<div class="popup" />').appendTo($("body"));
+    $fig = $figure.clone().appendTo($(".popup"));
+    $bg = $('<div class="bg" />').appendTo($(".popup"));
+    $close = $(
+      '<div class="close"><svg><use xlink:href="#close"></use></svg></div>'
+    ).appendTo($fig);
     $shadow = $('<div class="shadow" />').appendTo($fig);
-    src = $('img', $fig).attr('src');
-    $shadow.css({backgroundImage: 'url(' + src + ')'});
-    $bg.css({backgroundImage: 'url(' + src + ')'});
-    setTimeout(function(){
-      $('.popup').addClass('pop');
+    src = $("img", $fig).attr("src");
+    $shadow.css({ backgroundImage: "url(" + src + ")" });
+    $bg.css({ backgroundImage: "url(" + src + ")" });
+    setTimeout(function () {
+      $(".popup").addClass("pop");
     }, 10);
   },
-  close: function(){
-    $('.gallery, .popup').removeClass('pop');
-    setTimeout(function(){
-      $('.popup').remove()
+  close: function () {
+    $(".gallery, .popup").removeClass("pop");
+    setTimeout(function () {
+      $(".popup").remove();
     }, 100);
-  }
-}
+  },
+};
 
-popup.init()
-
-
-
+popup.init();
 
 /*Новый бургер*/
 let mainButton = document.getElementById("main-btn");
-let barOne = document.querySelector('.bar1');
-let barTwo = document.querySelector('.bar2');
-let barThree = document.querySelector('.bar3');
-let menuBox = document.querySelector('.menu__box');
-let menuItem = document.querySelectorAll('.menu__item');
+let barOne = document.querySelector(".bar1");
+let barTwo = document.querySelector(".bar2");
+let barThree = document.querySelector(".bar3");
+let menuBox = document.querySelector(".menu__box");
+let menuItem = document.querySelectorAll(".menu__item");
 
 mainButton.addEventListener("click", changeCond);
 
@@ -263,151 +294,154 @@ function changeCond() {
 }
 
 /*Privacy-popup*/
-let showPrivacy = document.querySelector('.privacy-button');
-let showPrivacyUpper = document.querySelector('.doc-conf');
-let closePrivacy = document.querySelector('.privacy-close');
-let popupPrivacy = document.querySelector('.popup-privacy');
+let showPrivacy = document.querySelector(".privacy-button");
+let showPrivacyUpper = document.querySelector(".doc-conf");
+let closePrivacy = document.querySelector(".privacy-close");
+let popupPrivacy = document.querySelector(".popup-privacy");
 
-showPrivacy.addEventListener('click', function(){
-  popupPrivacy.classList.remove('closed-privacy');
-  popupPrivacy.classList.add('opened-privacy');
+showPrivacy.addEventListener("click", function () {
+  popupPrivacy.classList.remove("closed-privacy");
+  popupPrivacy.classList.add("opened-privacy");
 });
 if (showPrivacyUpper) {
-  showPrivacyUpper.addEventListener('click', function(){
-    popupPrivacy.classList.remove('closed-privacy');
-    popupPrivacy.classList.add('opened-privacy');
+  showPrivacyUpper.addEventListener("click", function () {
+    popupPrivacy.classList.remove("closed-privacy");
+    popupPrivacy.classList.add("opened-privacy");
   });
-};
-closePrivacy.addEventListener('click', function(){
-  popupPrivacy.classList.remove('opened-privacy');
-  popupPrivacy.classList.add('closed-privacy');
+}
+closePrivacy.addEventListener("click", function () {
+  popupPrivacy.classList.remove("opened-privacy");
+  popupPrivacy.classList.add("closed-privacy");
 });
 
 /*Contract-popup*/
-let showContractUpper = document.querySelector('.doc-contract');
-let showContract = document.querySelector('.contract-button');
-let closeContract = document.querySelector('.contract-close');
-let popupContract = document.querySelector('.popup-contract');
+let showContractUpper = document.querySelector(".doc-contract");
+let showContract = document.querySelector(".contract-button");
+let closeContract = document.querySelector(".contract-close");
+let popupContract = document.querySelector(".popup-contract");
 
-showContract.addEventListener('click', function(){
-  popupContract.classList.remove('closed-privacy');
-  popupContract.classList.add('opened-privacy');
+showContract.addEventListener("click", function () {
+  popupContract.classList.remove("closed-privacy");
+  popupContract.classList.add("opened-privacy");
 });
 if (showContractUpper) {
-  showContractUpper.addEventListener('click', function(){
-    popupContract.classList.remove('closed-privacy');
-    popupContract.classList.add('opened-privacy');
+  showContractUpper.addEventListener("click", function () {
+    popupContract.classList.remove("closed-privacy");
+    popupContract.classList.add("opened-privacy");
   });
 }
-closeContract.addEventListener('click', function(){
-  popupContract.classList.remove('opened-privacy');
-  popupContract.classList.add('closed-privacy');
+closeContract.addEventListener("click", function () {
+  popupContract.classList.remove("opened-privacy");
+  popupContract.classList.add("closed-privacy");
 });
-
 
 /*Phone mask*/
 
-$(document).ready(function() {
-  $("#user_phone").click(function(){
-    $(this).setCursorPosition(3);
-  }).mask("+7(999)999-99-99",{autoclear: false});
+$(document).ready(function () {
+  $("#user_phone")
+    .click(function () {
+      $(this).setCursorPosition(3);
+    })
+    .mask("+7(999)999-99-99", { autoclear: false });
 });
 
-$.fn.setCursorPosition = function(pos) {
+$.fn.setCursorPosition = function (pos) {
   if ($(this).get(0).setSelectionRange) {
     $(this).get(0).setSelectionRange(pos, pos);
   } else if ($(this).get(0).createTextRange) {
     var range = $(this).get(0).createTextRange();
     range.collapse(true);
-    range.moveEnd('character', pos);
-    range.moveStart('character', pos);
+    range.moveEnd("character", pos);
+    range.moveStart("character", pos);
     range.select();
   }
 };
 
 function myFunction(x) {
-  if (x.matches) { // Если медиа запрос совпадает
-    $(document).ready(function() {
-     let lastScrollTop = 0;
-       $(window).scroll(function(event){
-         let st = $(this).scrollTop();
-         if (st > lastScrollTop){
-            upperMenuCheck.style.transform = "translateY(-30px)";
-         }
-         if (st < 100 ){
-            upperMenuCheck.style.transform = "translateY(0px)";
-         }
-         lastScrollTop = st;
+  if (x.matches) {
+    // Если медиа запрос совпадает
+    $(document).ready(function () {
+      let lastScrollTop = 0;
+      $(window).scroll(function (event) {
+        let st = $(this).scrollTop();
+        if (st > lastScrollTop) {
+          upperMenuCheck.style.transform = "translateY(-30px)";
+        }
+        if (st < 100) {
+          upperMenuCheck.style.transform = "translateY(0px)";
+        }
+        lastScrollTop = st;
       });
     });
   } else {
-    $(document).ready(function() {
-     let lastScrollTop = 0;
-       $(window).scroll(function(event){
-         let st = $(this).scrollTop();
-         if (st > lastScrollTop){
-            upperMenuCheck.style.transform = "translateY(0px)";
-         }
-         if (st < 100 ){
-            upperMenuCheck.style.transform = "translateY(0px)";
-         }
-         lastScrollTop = st;
+    $(document).ready(function () {
+      let lastScrollTop = 0;
+      $(window).scroll(function (event) {
+        let st = $(this).scrollTop();
+        if (st > lastScrollTop) {
+          upperMenuCheck.style.transform = "translateY(0px)";
+        }
+        if (st < 100) {
+          upperMenuCheck.style.transform = "translateY(0px)";
+        }
+        lastScrollTop = st;
       });
     });
   }
 }
 
 let x = window.matchMedia("(min-width: 960px)");
-myFunction(x) // Вызов функции прослушивателя во время выполнения
-x.addListener(myFunction) // Присоединить функцию прослушивателя при изменении состояния
-
+myFunction(x); // Вызов функции прослушивателя во время выполнения
+x.addListener(myFunction); // Присоединить функцию прослушивателя при изменении состояния
 
 /* Выделение активного пункта меню */
 
-let pageId = document.querySelector("[data-id-page]").getAttribute("data-id-page"),
-            navItem = document.querySelector(`[data-id-nav=${pageId}]`);
+let pageId = document
+    .querySelector("[data-id-page]")
+    .getAttribute("data-id-page"),
+  navItem = document.querySelector(`[data-id-nav=${pageId}]`);
 
-        if(pageId == navItem.getAttribute("data-id-nav")) {
-            navItem.classList.add("active");
-        }
+if (pageId == navItem.getAttribute("data-id-nav")) {
+  navItem.classList.add("active");
+}
 
 /*Search video*/
 
-let filter = function() {
-  let search = document.getElementById('search');
+let filter = function () {
+  let search = document.getElementById("search");
   if (search) {
-    search.addEventListener('keyup', function() {
+    search.addEventListener("keyup", function () {
       let filter = search.value.toLowerCase(),
-        filterItems = document.querySelectorAll('.blog-items-inner-wrapper');
-      filterItems.forEach(item => {
-        if(item.innerHTML.toLowerCase().indexOf(filter) > -1) {
-          item.style.display = '';
+        filterItems = document.querySelectorAll(".blog-items-inner-wrapper");
+      filterItems.forEach((item) => {
+        if (item.innerHTML.toLowerCase().indexOf(filter) > -1) {
+          item.style.display = "";
         } else {
-          item.style.display = 'none';
+          item.style.display = "none";
         }
-      })
-    })
+      });
+    });
   }
 };
 filter();
 
 /*Search articles*/
 
-let filterArticles = function() {
-  let search = document.getElementById('search-articles');
+let filterArticles = function () {
+  let search = document.getElementById("search-articles");
   if (search) {
-    search.addEventListener('keyup', function() {
+    search.addEventListener("keyup", function () {
       let filter = search.value.toLowerCase(),
-        filterItems = document.querySelectorAll('.article-wrapper');
-      filterItems.forEach(item => {
-        let itemTitle = item.querySelector('.article-title');
-        if(itemTitle.innerHTML.toLowerCase().indexOf(filter) > -1) {
-          item.style.display = '';
+        filterItems = document.querySelectorAll(".article-wrapper");
+      filterItems.forEach((item) => {
+        let itemTitle = item.querySelector(".article-title");
+        if (itemTitle.innerHTML.toLowerCase().indexOf(filter) > -1) {
+          item.style.display = "";
         } else {
-          item.style.display = 'none';
+          item.style.display = "none";
         }
-      })
-    })
+      });
+    });
   }
 };
 filterArticles();
@@ -542,7 +576,7 @@ function getVideos() {
 
 /*Показать ещё*/
 
-$(document).ready(function() {
+$(document).ready(function () {
   let list = $(".blog-items-first-wrapper .blog-items-inner-wrapper");
   let numToShow = 9; //сколько показывать элементов
   let button = $(".show-more");
@@ -550,12 +584,14 @@ $(document).ready(function() {
   list.hide();
   if (numInList > numToShow) {
     button.show();
+  } else {
+    button.hide();
   }
   list.slice(0, numToShow).show();
-  button.click(function() {
-    let showing = list.filter(':visible').length;
+  button.click(function () {
+    let showing = list.filter(":visible").length;
     list.slice(showing - 1, showing + numToShow).fadeIn();
-    let nowShowing = list.filter(':visible').length;
+    let nowShowing = list.filter(":visible").length;
     if (nowShowing >= numInList) {
       button.hide();
     }
@@ -564,7 +600,7 @@ $(document).ready(function() {
 
 /*Показать ещё - статьи*/
 
-$(document).ready(function() {
+$(document).ready(function () {
   let list = $(".articall-all .article-wrapper");
   let numToShow = 3; //сколько показывать элементов
   let button = $(".show-more-articles");
@@ -572,15 +608,32 @@ $(document).ready(function() {
   list.hide();
   if (numInList > numToShow) {
     button.show();
+  } else {
+    button.hide();
   }
   list.slice(0, numToShow).show();
-  button.click(function() {
-    let showing = list.filter(':visible').length;
+  button.click(function () {
+    let showing = list.filter(":visible").length;
     list.slice(showing - 1, showing + numToShow).fadeIn();
-    let nowShowing = list.filter(':visible').length;
+    let nowShowing = list.filter(":visible").length;
     if (nowShowing >= numInList) {
       button.hide();
     }
   });
 });
 
+$(".scrollto a").on("click", function () {
+  let href = $(this).attr("href");
+
+  $("html, body").animate(
+    {
+      scrollTop: $(href).offset().top - 100,
+    },
+    {
+      duration: 300, // по умолчанию «400»
+      easing: "swing", // по умолчанию «swing»
+    }
+  );
+
+  return false;
+});

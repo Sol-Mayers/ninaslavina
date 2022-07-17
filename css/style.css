@@ -5132,9 +5132,109 @@ figure {
   justify-content: space-between;
 }
 .profile-title {
-  margin-top: 30px;
+  margin-top: 25px;
 }
 .feedback-link {
   margin-top: 15px;
   width: 100%;
+}
+.add-info-teachers {
+  margin-top: 10px;
+}
+@media (min-width: 660px) {
+  .add-info-teachers {
+    margin-top: 15px;
+  }
+}
+.courses-wrap__navig {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  margin-bottom: 50px;
+  background-color: #ffffff;
+  padding: 10px;
+  position: relative;
+  width: 100%;
+  font-size: 18px;
+  box-shadow: 0px 0px 10px 0px gray;
+}
+.courses-wrap__navig::after {
+  content: "";
+  position: absolute;
+  bottom: -26px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 90%;
+  height: 2px;
+  background-color: #000000;
+}
+.navig__item {
+  font-family: "Montserrat";
+  color: #000000;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+  text-align: center;
+}
+.navig__item::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  width: 250px;
+  height: 2px;
+  background-color: #bada55;
+}
+@media (min-width: 660px) {
+  .courses-wrap__navig {
+    margin-bottom: 70px;
+    padding: 20px;
+    font-size: 20px;
+  }
+  .courses-wrap__navig::after {
+    bottom: -35px;
+  }
+  .navig__item::after {
+    width: 280px;
+  }
+}
+@media (min-width: 960px) {
+  .courses-wrap__navig {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 100px;
+    padding: 30px;
+    font-size: 22px;
+  }
+  .courses-wrap__navig::after {
+    bottom: -50px;
+  }
+  .navig__item {
+    width: 33%;
+  }
+  .navig__item::after {
+    content: "";
+    position: absolute;
+    bottom: 50%;
+    left: 100%;
+    transform: translate(-50%, 50%);
+    display: flex;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bada55;
+  }
+  .navig__item:nth-child(3):after {
+    display: none;
+  }
+  .navig__item:nth-child(6):after {
+    display: none;
+  }
 }
