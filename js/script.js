@@ -601,8 +601,8 @@ $(document).ready(function () {
 /*Показать ещё - статьи*/
 
 $(document).ready(function () {
-  let list = $(".articall-all .article-wrapper");
-  let numToShow = 3; //сколько показывать элементов
+  let list = $(".article-all .article-wrapper");
+  let numToShow = 5; //сколько показывать элементов
   let button = $(".show-more-articles");
   let numInList = list.length;
   list.hide();
@@ -637,3 +637,5 @@ $(".scrollto a").on("click", function () {
 
   return false;
 });
+
+//PDF js
