@@ -15,7 +15,6 @@
           result = r["result"];
       } catch (e) {}
     }
-    console.log(result);
     document.getElementById("nine-course").innerHTML = result[1][1];
     document.getElementById("start-date-nine").innerHTML = result[0][1];
     document.getElementById("ten-course").innerHTML = result[1][2];

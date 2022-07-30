@@ -250,9 +250,7 @@ popup = {
     $popup = $('<div class="popup" />').appendTo($("body"));
     $fig = $figure.clone().appendTo($(".popup"));
     $bg = $('<div class="bg" />').appendTo($(".popup"));
-    $close = $(
-      '<div class="close"><svg><use xlink:href="#close"></use></svg></div>'
-    ).appendTo($fig);
+    $close = $('<div class="close"></div>').appendTo($fig);
     $shadow = $('<div class="shadow" />').appendTo($fig);
     src = $("img", $fig).attr("src");
     $shadow.css({ backgroundImage: "url(" + src + ")" });

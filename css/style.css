@@ -420,6 +420,7 @@ p {
 .bar1,
 .bar2,
 .bar3 {
+  display: flex;
   width: 27px;
   height: 3px;
   background-color: #000000;
@@ -3514,10 +3515,10 @@ figure {
   width: 25px;
   height: 25px;
   cursor: pointer;
-  background: url(#close);
+  background-image: url(../img/cross-dipl.svg);
+  background-repeat: no-repeat;
   border-radius: 25px;
-  background: rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  background-color: #ffffff;
 }
 .popup .close svg {
   width: 100%;

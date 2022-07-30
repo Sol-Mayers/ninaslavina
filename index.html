@@ -11,8 +11,7 @@
       Курсы подготовки к ЕГЭ по математике от преподавателя Славиной Нины
       Сергеевны
     </title>
-    <link href="css/style.css" rel="stylesheet" />
-    <link href="css/swiper.min.css" rel="stylesheet" />
+    <link href="css/style.min.css" rel="stylesheet" />
     <link href="css/normalize.css" rel="stylesheet" />
     <link
       rel="icon"
@@ -96,9 +95,9 @@
               </a>
               <input id="menu__toggle" type="checkbox" />
               <label id="main-btn" class="menu__btn" for="menu__toggle">
-                <div class="bar1"></div>
-                <div class="bar2"></div>
-                <div class="bar3"></div>
+                <span class="bar1"></span>
+                <span class="bar2"></span>
+                <span class="bar3"></span>
               </label>
               <ul class="menu__box">
                 <li>
@@ -138,6 +137,7 @@
               <img
                 class="text-photo-wrap__main-photo"
                 src="./img/main-photo.jpg"
+                alt="teacher-photo"
               />
               <a
                 href="shedule.html"
@@ -173,8 +173,8 @@
               <img
                 src="./img/briefcase-icon.svg"
                 class="chapter-icon"
-                width="80px"
-                height="80px"
+                width="80"
+                height="80"
                 alt="chapter-icon"
               />
               <h2 class="all-titles">Опыт работы</h2>
@@ -228,10 +228,12 @@
                 <img
                   class="teacher-photo teacher-photo-one"
                   src="./img/teacher1.jpg"
+                  alt="coworker-1"
                 />
                 <img
                   class="teacher-photo teacher-photo-two"
                   src="./img/teacher2.jpg"
+                  alt="coworker-2"
                 />
               </div>
             </div>
@@ -241,8 +243,8 @@
               <img
                 src="./img/graduate-icon.svg"
                 class="chapter-icon"
-                width="80px"
-                height="80px"
+                width="80"
+                height="80"
                 alt="chapter-icon"
               />
               <h2 class="all-titles">Документы об образовании</h2>
@@ -290,7 +292,7 @@
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 style="display: none"
               >
-                <symbol id="close" viewBox="0 0 18 18">
+                <symbol class="closepop" viewBox="0 0 18 18">
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
@@ -309,7 +311,7 @@
                 xmlns:xlink="http://www.w3.org/1999/xlink"
                 style="display: none"
               >
-                <symbol id="close" viewBox="0 0 18 18">
+                <symbol class="closepop" viewBox="0 0 18 18">
                   <path
                     fill-rule="evenodd"
                     clip-rule="evenodd"
@@ -329,8 +331,8 @@
               <img
                 src="./img/thumb-up-icon.svg"
                 class="chapter-icon"
-                width="80px"
-                height="80px"
+                width="80"
+                height="80"
                 alt="chapter-icon"
               />
               <h2 class="all-titles">
@@ -1067,6 +1069,7 @@
       </div>
     </div>
     <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.maskedinput.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
