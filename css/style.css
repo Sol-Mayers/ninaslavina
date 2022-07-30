@@ -4285,7 +4285,7 @@ figure {
   align-items: flex-start;
   align-content: center;
   box-sizing: border-box;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 .article-text {
   display: flex;
@@ -4433,9 +4433,6 @@ figure {
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  .article-wrapper {
-    margin-bottom: 35px;
-  }
   .tabs__nav {
     margin-bottom: 40px;
     font-size: 20px;
@@ -4503,8 +4500,9 @@ figure {
     padding: 20px;
   }
   .article-title {
-    margin-bottom: 20px;
+    margin-bottom: 0px;
     font-size: 20px;
+    width: 65%;
   }
   .article-description {
     height: 16.5em;
@@ -4537,9 +4535,6 @@ figure {
   .article-wrapper::after {
     margin-top: 60px;
     margin-bottom: 60px;
-  }
-  .article-wrapper {
-    margin-bottom: 40px;
   }
   .show-more-articles {
     padding: 10px 15px;
@@ -5334,9 +5329,8 @@ figure {
 .read-download-download:hover {
   background-color: #bada55;
 }
-.doc-date::before {
+.doc-date::after {
   content: "";
-  display: flex;
   width: 100%;
   height: 1px;
   background-color: grey;
@@ -5349,10 +5343,18 @@ figure {
 .article-description-apart-paragraph {
   font-size: 15px;
 }
+.article-second-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+}
 @media (min-width: 660px) {
   .read-download-read,
   .read-download-download {
-    width: 150px;
     font-size: 16px;
   }
   .read-download {
@@ -5366,9 +5368,13 @@ figure {
   }
 }
 @media (min-width: 960px) {
+  .article-second-wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
   .read-download-read,
   .read-download-download {
-    width: 150px;
     font-size: 18px;
   }
   .read-download-read {
@@ -5377,4 +5383,22 @@ figure {
   .article-description-apart-paragraph {
     font-size: 18px;
   }
+  .doc-date {
+    justify-content: flex-end;
+    margin-top: 15px;
+  }
+  .doc-date::after {
+    margin-top: 10px;
+    margin-bottom: 0px;
+  }
+  .read-download {
+    width: 30%;
+    justify-content: flex-end;
+  }
+  .date-result-digigts {
+    margin-left: 10px;
+  }
+}
+.form-link {
+  word-break: break-all;
 }

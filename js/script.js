@@ -602,7 +602,7 @@ $(document).ready(function () {
 
 $(document).ready(function () {
   let list = $(".article-all .article-wrapper");
-  let numToShow = 5; //сколько показывать элементов
+  let numToShow = 10; //сколько показывать элементов
   let button = $(".show-more-articles");
   let numInList = list.length;
   list.hide();
