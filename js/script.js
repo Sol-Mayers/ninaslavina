@@ -196,6 +196,18 @@ $(".order-click").click(function () {
   );
   return false;
 });
+$(".coworkers-click").click(function () {
+  $("html, body").animate(
+    {
+      scrollTop:
+        $($(this).attr("href")).offset().top -
+        (middleMenuCheck.offsetHeight + 10),
+    },
+    1000,
+    "easeInOutCubic"
+  );
+  return false;
+});
 
 /*
   if(window.innerWidth >= 660 && window.innerWidth < 960){
