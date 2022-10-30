@@ -456,6 +456,27 @@ let filterArticles = function () {
 };
 filterArticles();
 
+/*Search notifocations*/
+
+let filterNotifications = function () {
+  let search = document.getElementById("search-notification");
+  if (search) {
+    search.addEventListener("keyup", function () {
+      let filter = search.value.toLowerCase(),
+        filterItems = document.querySelectorAll(".notification-wrapper");
+      filterItems.forEach((item) => {
+        let itemTitle = item.querySelector(".notification-title");
+        if (itemTitle.innerHTML.toLowerCase().indexOf(filter) > -1) {
+          item.style.display = "";
+        } else {
+          item.style.display = "none";
+        }
+      });
+    });
+  }
+};
+filterNotifications();
+
 /*Загрузка видео с ютуб-канала
 let nextPageToken ="";
 fetch('https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCtljxRy92SbRHNs7DqCZVHQ&maxResults=10&order=date&key=AIzaSyDpSry6y6Y-pk7EQJSSRY0OdTnsGJ3UmO0&pageToken=' + nextPageToken)
@@ -614,6 +635,28 @@ $(document).ready(function () {
   let list = $(".article-all .article-wrapper");
   let numToShow = 10; //сколько показывать элементов
   let button = $(".show-more-articles");
+  let numInList = list.length;
+  list.hide();
+  if (numInList > numToShow) {
+    button.show();
+  } else {
+    button.hide();
+  }
+  list.slice(0, numToShow).show();
+  button.click(function () {
+    let showing = list.filter(":visible").length;
+    list.slice(showing - 1, showing + numToShow).fadeIn();
+    let nowShowing = list.filter(":visible").length;
+    if (nowShowing >= numInList) {
+      button.hide();
+    }
+  });
+});
+
+$(document).ready(function () {
+  let list = $(".notification-all .notification-wrapper");
+  let numToShow = 10; //сколько показывать элементов
+  let button = $(".show-more-notification");
   let numInList = list.length;
   list.hide();
   if (numInList > numToShow) {

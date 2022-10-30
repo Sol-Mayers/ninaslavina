@@ -68,6 +68,46 @@ const DATA = [
     name: "Треугольник",
     doc: "./documents/7treugolnik.pdf",
   },
+  {
+    level: "Высшая математика",
+    name: "Основные свойства прогрессий",
+    doc: "./documents/4osnovnye-svoystva-progressiy.pdf",
+  },
+  {
+    level: "10 класс",
+    name: "Расположение корней квадратного трёхчлена в задачах с параметром",
+    doc: "./documents/5raspolozh-kvadrat-trehchlena-v-zadach-s-param.pdf",
+  },
+  {
+    level: "11 класс",
+    name: "Стереометрия основные признаки и свойства",
+    doc: "./documents/6stereometriya-osnovnye-priznaki-i-svoystva.pdf",
+  },
+  {
+    level: "10 класс",
+    name: "Треугольник",
+    doc: "./documents/7treugolnik.pdf",
+  },
+  {
+    level: "Высшая математика",
+    name: "Основные свойства прогрессий",
+    doc: "./documents/4osnovnye-svoystva-progressiy.pdf",
+  },
+  {
+    level: "10 класс",
+    name: "Расположение корней квадратного трёхчлена в задачах с параметром",
+    doc: "./documents/5raspolozh-kvadrat-trehchlena-v-zadach-s-param.pdf",
+  },
+  {
+    level: "11 класс",
+    name: "Стереометрия основные признаки и свойства",
+    doc: "./documents/6stereometriya-osnovnye-priznaki-i-svoystva.pdf",
+  },
+  {
+    level: "10 класс",
+    name: "Треугольник",
+    doc: "./documents/7treugolnik.pdf",
+  },
 ];
 
 outputGoods(DATA);

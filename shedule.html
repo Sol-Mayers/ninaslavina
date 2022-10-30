@@ -141,7 +141,17 @@
     </header>
     <main>
       <div class="main-info">
-        <div class="main-info__items">
+        <div class="main-info__items feedback-items">
+          <div class="feedback-photo-text">
+            <img
+              src="./img/feedback-back-6.webp"
+              width="300"
+              height="250"
+              alt="feedback-photo"
+              class="feedback-photo-back"
+            />
+            <p class="feedback-text">Онлайн-курсы</p>
+          </div>
           <div class="items__courses-wrap">
             <h2 class="courses-wrap__main-title">
               Для записи на любой из онлайн-курсов, представленных ниже, прошу
@@ -178,13 +188,18 @@
               >
             </div>
             <div id="nine" class="courses-wrap__course-item">
-              <div class="courses-wrap__icon-text-wrap">
-                <div class="courses-wrap__icon-course">
-                  <p class="icon-course__text">9</p>
-                  <p class="icon-course__text-word">класс</p>
-                  <div class="icon-course__image"></div>
+              <div class="teacher-course-wrapper">
+                <div class="courses-wrap__icon-text-wrap">
+                  <div class="courses-wrap__icon-course">
+                    <p class="icon-course__text">9</p>
+                    <p class="icon-course__text-word">класс</p>
+                    <div class="icon-course__image"></div>
+                  </div>
+                  <h2 class="courses-wrap__title">Курс для 9 класса</h2>
                 </div>
-                <h2 class="courses-wrap__title">Курс для 9 класса</h2>
+                <div class="courses-wrap__icon-teacher">
+                  <img src="./img/teacher.png" class="icon-teacher_small" />
+                </div>
               </div>
               <p class="courses-wrap__text">
                 Дата начала курса - <b id="start-date-nine"></b>
@@ -543,6 +558,10 @@
                 <a
                   href="https://www.youtube.com/channel/UCtljxRy92SbRHNs7DqCZVHQ"
                   class="inside__lowest-link vk"
+                ></a>
+                <a
+                  href="mailto:slavinanina@list.ru, math@ninaslavina.ru, slavin.yaroslav@bk.ru"
+                  class="inside__lowest-link email"
                 ></a>
               </div>
             </div>
